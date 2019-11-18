@@ -63,8 +63,9 @@
       margin-bottom: 65px
     &__time--number__wrapper
       display: flex
-      padding-left: 5%
+      justify-content: space-around
       margin-bottom: 35px
+      padding-right: 5%
     &__watch
       display: flex
       &--image
@@ -116,9 +117,6 @@
       > span
         font-size: 58px
         z-index: 2
-        text-shadow: #00ca00 0px 0px 4px, #006f3a 0px 0px 7px
-        -webkit-filter: drop-shadow(-19px 15px 2px black)
-        filter: drop-shadow(-19px 15px 2px black)
     &__address
       -webkit-filter: drop-shadow(-19px 15px 2px black)
       filter: drop-shadow(-19px 15px 2px black)

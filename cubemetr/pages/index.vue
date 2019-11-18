@@ -1,14 +1,20 @@
 <template>
   <div class="cubemetr">
     <cube-header/>
+    <menu-table/>
+    <client-only>
+      <cube-footer/>
+    </client-only>
   </div>
 </template>
 
 <script>
 
 import CubeHeader from "../components/header/CubeHeader";
+import MenuTable from "../components/menu/MenuTable";
+import CubeFooter from "../components/footer/CubeFooter";
 export default {
-    components: {CubeHeader}
+    components: {CubeFooter, MenuTable, CubeHeader},
 }
 </script>
 
@@ -20,7 +26,7 @@ export default {
     url("../components/fonts/BicubikRegular/BicubikRegular.woff") format("woff"),
     url("../components/fonts/BicubikRegular/BicubikRegular.ttf") format("truetype")
     font-style: normal
-    font-weight: normal;
+    font-weight: normal
 
 </style>
 
