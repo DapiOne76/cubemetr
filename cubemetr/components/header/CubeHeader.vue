@@ -39,6 +39,7 @@
     height: 978px
     color: white
     font-family: "BicubikRegular"
+    padding-bottom: 35px
     &__wrapper
       width: 100%
       display: flex

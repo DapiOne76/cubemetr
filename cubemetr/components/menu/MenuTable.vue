@@ -52,6 +52,8 @@
 
 <style lang="sass">
   .menuTable
+    margin-top: -35px
+    border-radius: 35px
     display: flex
     flex-direction: column
     background-image: url(FON.jpg)
@@ -61,6 +63,7 @@
     background-size: 100% /* Современные браузеры */
     justify-content: center
     align-content: center
+    position: relative
     &__title
       display: flex
       padding: 15px

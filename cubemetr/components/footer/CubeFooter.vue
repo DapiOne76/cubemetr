@@ -55,10 +55,11 @@
 
 <style lang="sass">
   .cubeFooter
+    margin-top: -35px
     display: flex
     width: 100%
-    height: 350px
-    padding-top: 25px
+    height: 385px
+    padding-top: 60px
     background-image: url(./footer.jpg)
     padding-left: 15%
     &__info
