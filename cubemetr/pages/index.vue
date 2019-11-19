@@ -27,6 +27,9 @@ export default {
     url("../components/fonts/BicubikRegular/BicubikRegular.ttf") format("truetype")
     font-style: normal
     font-weight: normal
-
+  .cubemetr
+    display: flex
+    flex-direction: column
+    flex-basis: 100%
 </style>
 

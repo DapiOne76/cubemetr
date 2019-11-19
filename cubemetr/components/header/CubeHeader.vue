@@ -34,6 +34,7 @@
     -webkit-background-size: 100% /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100% /* Opera 9.6+ */
     background-size: 100% /* Современные браузеры */
+    background-repeat: no-repeat
     display: flex
     width: 100%
     height: 978px
@@ -75,6 +76,7 @@
         -webkit-background-size: 100% /* Safari 3.1+ и Chrome 4.0+ */
         -o-background-size: 100% /* Opera 9.6+ */
         background-size: 100% /* Современные браузеры */
+        background-repeat: no-repeat
         height: 140px
         width: 140px
         z-index: 2
@@ -124,4 +126,54 @@
       font-size: 72px
       align-self: center
       text-shadow: #00ca00 0px 0px 4px, #006f3a 0px 0px 7px
+  @media only screen and (max-width: 640px)
+    .header
+      height: unset
+      &__name
+        font-size: 38px
+      &__name--description
+        font-size: 16px
+        margin-bottom: unset
+        padding-left: 15%
+      &__watch
+        &--image
+          width: 82px
+          height: 82px
+        &--description
+          font-size: 11px
+      &__number
+        width: 160px
+        height: 25px
+        align-self: center
+        > span
+          font-size: 10px
+      &__time--number__wrapper
+        margin-bottom: unset
+      &__address
+        font-size: 18px
+  @media only screen and (max-width: 340px)
+    .header
+      height: unset
+      &__name
+        font-size: 32px
+      &__name--description
+        font-size: 14px
+        margin-bottom: unset
+        padding-left: 12%
+      &__watch
+        &--image
+          width: 82px
+          height: 82px
+        &--description
+          font-size: 10px
+      &__number
+        width: 160px
+        height: 25px
+        align-self: center
+        > span
+          font-size: 9px
+      &__time--number__wrapper
+        margin-bottom: unset
+      &__address
+        font-size: 14px
 </style>

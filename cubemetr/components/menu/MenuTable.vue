@@ -84,7 +84,14 @@
       flex-wrap: wrap
       justify-content: center
       align-self: center
-      padding-right: 5%
-      padding-right: 5%
-
+  @media only screen and (max-width: 640px)
+    .menuTable
+      &__title
+        margin-left: unset
+        > span
+          font-size: 20px
+          margin-left: 0px
+  @media only screen and (max-width: 640px)
+    .menuTable
+      border-radius: 20px
 </style>

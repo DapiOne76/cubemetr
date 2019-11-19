@@ -1,7 +1,7 @@
 <template>
   <div class="cubeFooter">
     <div class="cubeFooter__info">
-      <img height="325px" width="325px" src="./meme.png">
+      <img class="cubeFooter__info--img" src="./meme.png">
       <div class="cubeFooter__info--text">
         <span class="cubeFooter__info--header" v-text="'КАК НАС НАЙТИ'"></span>
         <div class="cubeFooter__info--block">
@@ -14,13 +14,13 @@
           <img height="28px" width="28px" src="./location.png">
           <span class="cubeFooter__info--description" v-text="'Схема проезда'"></span>
         </div>
-        <span v-text="'Адрес:'"></span>
+        <span class="cubeFooter__info--explanation" v-text="'Адрес:'"></span>
         <span v-text="'ул. Промзона Декабристов, 2'"></span>
-        <span v-text="'E-mail:'"></span>
+        <span class="cubeFooter__info--explanation"  v-text="'E-mail:'"></span>
         <span v-text="'patrikslava2015@yandex.ru'"></span>
       </div>
     </div>
-    <div id="map" style="width: 500px; height: 300px"></div>
+    <div id="map"></div>
   </div>
 </template>
 
@@ -57,14 +57,17 @@
   .cubeFooter
     margin-top: -35px
     display: flex
+    justify-content: center
     width: 100%
     height: 385px
     padding-top: 60px
     background-image: url(./footer.jpg)
-    padding-left: 15%
     &__info
       display: flex
       margin-right: 35px
+      &--img
+        width: 325px
+        height: 325px
       &--text
         display: flex
         flex-direction: column
@@ -82,4 +85,39 @@
           margin-left: 10px
       &--description
         font-size: 24px
+    #map
+      width: 500px
+      height: 300px
+  @media only screen and (max-width: 640px)
+    .cubeFooter
+      flex-direction: column-reverse
+      justify-content: flex-start
+      align-items: center
+      height: unset
+      #map
+        width: 350px
+        height: 250px
+      &__info
+        flex-direction: row-reverse
+        padding: 15px 0 15px
+        margin-right: 0px
+        &--img
+          width: 130px
+          height: 130px
+        &--text
+          font-size: 12px
+        &--header
+          font-size: 16px
+        &--block
+          > span
+            margin-left: 10px
+        &--description
+          font-size: 14px
+        &--explanation
+          font-size: 16px
+  @media only screen and (max-width: 640px)
+    .cubeFooter
+      #map
+        width: 300px
+        height: 200px
 </style>

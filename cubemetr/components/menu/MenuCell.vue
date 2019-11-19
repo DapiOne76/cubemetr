@@ -30,4 +30,10 @@
       font-size: 48px
       flex-basis: 77%
       text-align: right
+  @media only screen and (max-width: 640px)
+    .menuCell
+      width: 300px
+      height: 175px
+      > span
+        font-size: 24px
 </style>
