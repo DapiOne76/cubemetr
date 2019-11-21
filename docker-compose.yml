@@ -1,0 +1,23 @@
+version: '3.1'
+
+services:
+
+  nginx:
+    build: ./nginx
+    ports:
+      - 80:80
+    volumes:
+      - /etc/localtime:/etc/localtime/:ro
+      - ./logs:/var/log/nginx
+      - ./files:/static/files
+    command: nginx -g "daemon off;"
+    restart: always
+
+  nuxt:
+    build: ./cubemetr/
+    container_name: nuxt-generate
+    restart: always
+    ports:
+      - "3000:3000"
+    command:
+      "npm run start"
