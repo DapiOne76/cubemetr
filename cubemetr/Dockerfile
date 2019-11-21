@@ -1,4 +1,4 @@
-FROM node:10.7
+FROM node:10-alpine
 
 ENV APP_ROOT /src
 
@@ -7,6 +7,7 @@ WORKDIR ${APP_ROOT}
 ADD . ${APP_ROOT}
 
 RUN npm install
+RUN npm rebuild node-sass --force
 RUN npm run build
 
 ENV HOST 0.0.0.0
