@@ -1,6 +1,7 @@
 <template>
   <div class="cubemetr">
     <cube-header/>
+    <img class="cubemetr--img" src="./25-sosna.png">
     <menu-table/>
     <client-only>
       <cube-footer/>
@@ -31,5 +32,11 @@ export default {
     display: flex
     flex-direction: column
     flex-basis: 100%
+    &--img
+      width: 100%
+
+  @media only screen and (max-width: 1024px)
+    *
+      filter: unset !important
 </style>
 

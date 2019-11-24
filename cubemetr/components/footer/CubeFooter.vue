@@ -1,15 +1,18 @@
 <template>
   <div class="cubeFooter">
     <div class="cubeFooter__info">
-      <img class="cubeFooter__info--img" src="./meme.png">
+      <div class="cubeFooter__info--img--wrapper" >
+        <img class="cubeFooter__info--img" src="./meme.png">
+
+      </div>
       <div class="cubeFooter__info--text">
         <span class="cubeFooter__info--header" v-text="'КАК НАС НАЙТИ'"></span>
         <div class="cubeFooter__info--block">
           <img height="28px" width="28px" src="./phone.png">
           <span class="cubeFooter__info--description" v-text="'Телефон:'"></span>
         </div>
-        <span class="cubeFooter__info--number" v-text="'+7 (4852) 33 40 43'"></span>
-        <span class="cubeFooter__info--number" v-text="'+7 (4852) 33 29 82'"></span>
+        <a class="cubeFooter__info--number" href="tel:+74852334043">+7 (4852) 33 40 43</a>
+        <a class="cubeFooter__info--number" href="tel:+74852332982">+7 (4852) 33 29 82</a>
         <div class="cubeFooter__info--block">
           <img height="28px" width="28px" src="./location.png">
           <span class="cubeFooter__info--description" v-text="'Схема проезда'"></span>
@@ -85,6 +88,8 @@
           margin-left: 10px
       &--description
         font-size: 24px
+      &--number
+        color: white
     #map
       width: 500px
       height: 300px
@@ -120,4 +125,28 @@
       #map
         width: 300px
         height: 200px
+  @media only screen and (orientation: landscape) and (max-width: 1024px) and (min-width: 400px)
+    .cubeFooter
+      height: 300px
+      #map
+        width: 350px
+        height: 250px
+      &__info
+        height: 250px
+        align-items: center
+        &--img
+          width: 130px
+          height: 130px
+          margin-right: 10px
+        &--text
+          font-size: 12px
+        &--header
+          font-size: 16px
+        &--block
+          > span
+            margin-left: 10px
+        &--description
+          font-size: 14px
+        &--explanation
+          font-size: 16px
 </style>

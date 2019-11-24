@@ -39,8 +39,9 @@
     width: 100%
     height: 978px
     color: white
+    flex-direction: column
+    justify-content: flex-end
     font-family: "BicubikRegular"
-    padding-bottom: 35px
     &__wrapper
       width: 100%
       display: flex
@@ -126,7 +127,7 @@
       font-size: 72px
       align-self: center
       text-shadow: #00ca00 0px 0px 4px, #006f3a 0px 0px 7px
-  @media only screen and (max-width: 640px)
+  @media only screen and (max-width: 512px)
     .header
       height: unset
       &__name
@@ -169,6 +170,31 @@
       &__number
         width: 160px
         height: 25px
+        align-self: center
+        > span
+          font-size: 9px
+      &__time--number__wrapper
+        margin-bottom: unset
+      &__address
+        font-size: 14px
+  @media only screen and (orientation: landscape) and (max-width: 1024px) and (min-width: 400px)
+    .header
+      height: 350px
+      &__name
+        font-size: 42px
+      &__name--description
+        font-size: 18px
+        margin-bottom: unset
+        padding-left: 12%
+      &__watch
+        &--image
+          width: 82px
+          height: 82px
+        &--description
+          font-size: 10px
+      &__number
+        width: 160px
+        height: 35px
         align-self: center
         > span
           font-size: 9px

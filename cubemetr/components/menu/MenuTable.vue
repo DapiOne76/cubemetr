@@ -22,28 +22,37 @@
       data: () => ({
         cells: [
             {
-                name: 'ИМИТАЦИЯ БРУСА'
+                name: 'ИМИТАЦИЯ БРУСА',
+                src: 'Imitatsia_brusa'
             },
             {
-                name: 'ПОГОНАЖНЫЕ ИЗДЕЛИЯ'
+                name: 'ПОГОНАЖНЫЕ ИЗДЕЛИЯ',
+                src: 'Pogonazhnye_izdelia'
+
             },
             {
-                name: 'ЕВРОВАГОНКА'
+                name: 'ЕВРОВАГОНКА',
+                src: 'Vagonka'
             },
             {
-                name: 'ВАГОНКА ШТИЛЬ'
+                name: 'ВАГОНКА ШТИЛЬ',
+                src: 'Evrovagonka_shtil'
             },
             {
-                name: 'ДОСКА ПОЛА'
+                name: 'ДОСКА ПОЛА',
+                src: 'Doska_pola'
             },
             {
-                name: 'БРУСОК'
+                name: 'БРУСОК',
+                src: 'Brusok'
             },
             {
-                name: 'БЛОК ХАУС'
+                name: 'БЛОК ХАУС',
+                src: 'Blok_khaus'
             },
             {
-                name: 'ЭЛЕТЕМЕНТЫ ЛЕСТНИЦ'
+                name: 'ЭЛЕТЕМЕНТЫ ЛЕСТНИЦ',
+                src: 'Elementy_lestnitsy'
             },
         ]
     })
@@ -84,14 +93,66 @@
       flex-wrap: wrap
       justify-content: center
       align-self: center
-  @media only screen and (max-width: 640px)
+      .img-Imitatsia_brusa
+        background-image: url(./menuIImg/Imitatsia_brusa.jpg)
+        -moz-background-size: cover /* Firefox 3.6+ */
+        -webkit-background-size: cover /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: cover /* Opera 9.6+ */
+        background-size: cover /* Современные браузеры */
+      .img-Pogonazhnye_izdelia
+        background-image: url(./menuIImg/Pogonazhnye_izdelia.jpg)
+        -moz-background-size: cover /* Firefox 3.6+ */
+        -webkit-background-size: cover /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: cover /* Opera 9.6+ */
+        background-size: cover /* Современные браузеры */
+      .img-Vagonka
+        background-image: url(./menuIImg/Vagonka.jpg)
+        -moz-background-size: cover /* Firefox 3.6+ */
+        -webkit-background-size: cover /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: cover /* Opera 9.6+ */
+        background-size: cover /* Современные браузеры */
+      .img-Evrovagonka_shtil
+        background-image: url(./menuIImg/Evrovagonka_shtil.jpg)
+        -moz-background-size: cover /* Firefox 3.6+ */
+        -webkit-background-size: cover /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: cover /* Opera 9.6+ */
+        background-size: cover /* Современные браузеры */
+      .img-Doska_pola
+        background-image: url(./menuIImg/Doska_pola.jpg)
+        -moz-background-size: cover /* Firefox 3.6+ */
+        -webkit-background-size: cover /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: cover /* Opera 9.6+ */
+        background-size: cover /* Современные браузеры */
+      .img-Brusok
+        background-image: url(./menuIImg/Brusok.jpg)
+        -moz-background-size: cover /* Firefox 3.6+ */
+        -webkit-background-size: cover /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: cover /* Opera 9.6+ */
+        background-size: cover /* Современные браузеры */
+      .img-Blok_khaus
+        background-image: url(./menuIImg/Blok_khaus.jpg)
+        -moz-background-size: cover /* Firefox 3.6+ */
+        -webkit-background-size: cover /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: cover /* Opera 9.6+ */
+        background-size: cover /* Современные браузеры */
+      .img-Elementy_lestnitsy
+        background-image: url(./menuIImg/Elementy_lestnitsy.jpg)
+        -moz-background-size: cover /* Firefox 3.6+ */
+        -webkit-background-size: cover /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: cover /* Opera 9.6+ */
+        background-size: cover /* Современные браузеры */
+  @media only screen and (max-width: 512px)
     .menuTable
+      margin-top: -20px
+      border-radius: 10px
       &__title
         margin-left: unset
         > span
           font-size: 20px
           margin-left: 0px
-  @media only screen and (max-width: 640px)
+  @media only screen and (orientation: landscape) and (max-width: 1024px) and (min-width: 400px)
     .menuTable
-      border-radius: 20px
+      &__title
+        > span
+          font-size: 26px
 </style>
