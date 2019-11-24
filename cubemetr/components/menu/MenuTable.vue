@@ -11,6 +11,7 @@
         :item="cell"
       />
     </div>
+    <span class="menuTable--adwords" v-text="'Для строительных бригад, застройщиков и строительных компаний, предоставляется VIP скидка до 7%.'"></span>
   </div>
 </template>
 
@@ -141,6 +142,16 @@
         -webkit-background-size: cover /* Safari 3.1+ и Chrome 4.0+ */
         -o-background-size: cover /* Opera 9.6+ */
         background-size: cover /* Современные браузеры */
+    &--adwords
+      color: white
+      font-size: 48px
+      font-weight: bold
+      width: 60%
+      align-self: center
+      text-align: center
+      padding: 20px 5px
+      border: 2px solid white
+      margin: 10px
   @media only screen and (max-width: 512px)
     .menuTable
       margin-top: -20px
@@ -150,9 +161,13 @@
         > span
           font-size: 20px
           margin-left: 0px
+      &--adwords
+        font-size: 14px
   @media only screen and (orientation: landscape) and (max-width: 1024px) and (min-width: 400px)
     .menuTable
       &__title
         > span
           font-size: 26px
+      &--adwords
+        font-size: 14px
 </style>
