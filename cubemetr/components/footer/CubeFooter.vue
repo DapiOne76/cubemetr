@@ -11,8 +11,7 @@
           <img height="28px" width="28px" src="./phone.png">
           <span class="cubeFooter__info--description" v-text="'Телефон:'"></span>
         </div>
-        <a class="cubeFooter__info--number" href="tel:+74852334043">+7 (4852) 33 40 43</a>
-        <a class="cubeFooter__info--number" href="tel:+74852332982">+7 (4852) 33 29 82</a>
+        <a class="cubeFooter__info--number" href="tel:+79108149095">+7 (910) 814 90 95</a>
         <div class="cubeFooter__info--block">
           <img height="28px" width="28px" src="./location.png">
           <span class="cubeFooter__info--description" v-text="'Схема проезда'"></span>
@@ -68,9 +67,12 @@
     &__info
       display: flex
       margin-right: 35px
+      padding-bottom: 50px
       &--img
         width: 325px
         height: 325px
+        &--wrapper
+          padding-right: 15px
       &--text
         display: flex
         flex-direction: column

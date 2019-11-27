@@ -23,16 +23,18 @@
   .menuCell
     display: flex
     position: relative
-    width: 600px
+    width: 520px
     color: white
-    border: 5px solid green
-    border-radius: 15px
-    margin: 3%
-    height: 350px
+    border: 7px solid #0FB609
+    border-radius: 25px
+    margin: 20px
+    height: 325px
     justify-content: flex-end
     > span
       padding: 0 10px 10px 0
       align-self: flex-end
+      border-bottom-left-radius: 25px
+      border-bottom-right-radius: 25px
       font-size: 48px
       flex-basis: 100%
       text-align: right
@@ -43,6 +45,7 @@
       width: 100%
       height: 100%
       background-repeat: no-repeat
+      border-radius: 20px
 
   @media only screen and (max-width: 640px)
     .menuCell

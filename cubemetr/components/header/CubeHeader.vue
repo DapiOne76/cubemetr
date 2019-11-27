@@ -1,12 +1,9 @@
 <template>
   <div class="header">
     <div class="header__wrapper">
-      <span class="header__name" v-text="'КУБОМЕТР'"></span>
       <span class="header__name--description" v-text="'ПРОДАЖА СУХОГО СТРОГАННОГО ПИЛОМАТЕРИАЛА'"></span>
       <div class="header__time--number__wrapper">
         <div class="header__watch">
-          <div class="header__watch--image">
-          </div>
           <div class="header__watch--description">
             <span v-text="'пн-пт: с 9:00-18:00'"></span>
             <span v-text="'сб: с 9:00-15:00'"></span>
@@ -37,7 +34,7 @@
     background-repeat: no-repeat
     display: flex
     width: 100%
-    height: 978px
+    height: 700px
     color: white
     flex-direction: column
     justify-content: flex-end
@@ -47,84 +44,40 @@
       display: flex
       flex-direction: column
       justify-content: flex-end
-    &__name
-      -webkit-filter: drop-shadow(-19px 15px 2px black)
-      filter: drop-shadow(-19px 15px 2px black)
-      font-size: 168px
-      padding-left: 10%
-      font-style: italic
-      text-shadow: #00ca00 0px 0px 12px, #006f3a 0px 0px 16px
-      line-height: 1
-      margin-bottom: 10px
     &__name--description
-      -webkit-filter: drop-shadow(-19px 15px 2px black)
-      filter: drop-shadow(-19px 15px 2px black)
       font-style: italic
-      font-size: 42px
+      font-size: 28px
       padding-left: 19%
       font-weight: bold
       margin-bottom: 65px
     &__time--number__wrapper
       display: flex
       justify-content: space-around
-      margin-bottom: 35px
+      margin-bottom: 28px
       padding-right: 5%
     &__watch
       display: flex
-      &--image
-        background-image: url(watch.png)
-        -moz-background-size: 100% /* Firefox 3.6+ */
-        -webkit-background-size: 100% /* Safari 3.1+ и Chrome 4.0+ */
-        -o-background-size: 100% /* Opera 9.6+ */
-        background-size: 100% /* Современные браузеры */
-        background-repeat: no-repeat
-        height: 140px
-        width: 140px
-        z-index: 2
-        -webkit-filter: drop-shadow(-19px 15px 2px black)
-        filter: drop-shadow(-19px 15px 2px black)
       &--description
-        -webkit-filter: drop-shadow(-19px 15px 2px black)
-        filter: drop-shadow(-19px 15px 2px black)
         display: flex
         flex-direction: column
         justify-content: center
-        font-size: 48px
+        font-size: 42px
+        margin-left: 130px
         text-shadow: #00ca00 0px 0px 2px, #006f3a 0px 0px 3px
     &__number
       margin-left: 30px
-      width: 680px
-      height: 140px
       position: relative
       display: flex
       justify-content: center
       align-items: center
-      &::before
-        z-index: 1
-        content: ""
-        position: absolute
-        width: 100%
-        height: 100%
-        background-image: url(table.png)
-        background-repeat: no-repeat
-        -moz-background-size: 100% /* Firefox 3.6+ */
-        -webkit-background-size: 100% /* Safari 3.1+ и Chrome 4.0+ */
-        -o-background-size: 100% /* Opera 9.6+ */
-        background-size: 100% /* Современные браузеры */
-        -webkit-transform: scaleX(-1)
-        -moz-transform: scaleX(-1)
-        -ms-transform: scaleX(-1)
-        -o-transform: scaleX(-1)
-        transform: scaleX(-1)
-        -webkit-filter: drop-shadow(10px 9px 9px black)
-        filter: drop-shadow(10px 9px 9px black)
+      -webkit-text-stroke: 2px #00ca00
       > span
-        font-size: 58px
+        font-size: 47px
         z-index: 2
+        font-weight: bold
+        padding-top: 5px
     &__address
-      -webkit-filter: drop-shadow(-19px 15px 2px black)
-      filter: drop-shadow(-19px 15px 2px black)
-      font-size: 72px
+      font-size: 46px
       align-self: center
       text-shadow: #00ca00 0px 0px 4px, #006f3a 0px 0px 7px
   @media only screen and (max-width: 512px)

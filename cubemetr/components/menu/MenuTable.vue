@@ -11,7 +11,7 @@
         :item="cell"
       />
     </div>
-    <span class="menuTable--adwords" v-text="'Для строительных бригад, застройщиков и строительных компаний, предоставляется VIP скидка до 7%.'"></span>
+    <span class="menuTable--adwords" v-text="'Для строительных бригад, застройщиков и строительных компаний, предоставляется VIP скидка.'"></span>
   </div>
 </template>
 
@@ -52,7 +52,7 @@
                 src: 'Blok_khaus'
             },
             {
-                name: 'ЭЛЕТЕМЕНТЫ ЛЕСТНИЦ',
+                name: 'ЭЛЕМЕНТЫ ЛЕСТНИЦ',
                 src: 'Elementy_lestnitsy'
             },
         ]
@@ -63,7 +63,6 @@
 <style lang="sass">
   .menuTable
     margin-top: -35px
-    border-radius: 35px
     display: flex
     flex-direction: column
     background-image: url(FON.jpg)
@@ -77,18 +76,19 @@
     &__title
       display: flex
       padding: 15px
-      margin-left: -62px
       display: flex
       justify-content: center
       align-items: center
       color: white
       font-family: "BicubikRegular"
-      font-size: 72px
-      text-shadow: #00ca00 0px 0px 4px, #006f3a 0px 0px 7px
+      font-size: 52px
+      font-weight: bold
+      -webkit-text-stroke: 2px #0FB609
+      -webkit-filter: drop-shadow(2px 3px 2px black)
+      filter: drop-shadow(2px 3px 2px black)
       > span
         margin-left: 20px
         line-height: 1
-        filter: drop-shadow(-1px 9px 2px black)
     &__items
       display: flex
       flex-wrap: wrap
@@ -144,9 +144,9 @@
         background-size: cover /* Современные браузеры */
     &--adwords
       color: white
-      font-size: 48px
+      font-size: 36px
       font-weight: bold
-      width: 60%
+      width: 75%
       align-self: center
       text-align: center
       padding: 20px 5px
