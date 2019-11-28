@@ -30,6 +30,22 @@
     margin: 20px
     height: 325px
     justify-content: flex-end
+    transition: filter 150ms
+    &:before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      background-color: black
+      transition: opacity 150ms
+      opacity: 0
+      border-radius: 20px
+      z-index: 5
+    &:hover
+      -webkit-filter: drop-shadow(0px 0px 15px black)
+      filter: drop-shadow(0px 0px 15px black)
+      &:before
+        opacity: 0.15
     > span
       padding: 0 10px 10px 0
       align-self: flex-end
