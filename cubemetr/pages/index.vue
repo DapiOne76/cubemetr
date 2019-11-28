@@ -32,12 +32,24 @@ import Slider from "../components/slider";
 export default {
     components: {Slider, CubeFooter, MenuTable, CubeHeader},
     data: () => ({
-        valueSlider: 0
+        valueSlider: 0,
+        interval: null
     }),
     methods: {
         curImg(i) {
+            clearInterval(this.interval)
             this.valueSlider = i;
+            this.setInterval();
         },
+        setSliderValue() {
+            this.valueSlider = (this.valueSlider === 0) ? 1: 0
+        },
+        setInterval() {
+            this.interval = setInterval(this.setSliderValue, 3000)
+        }
+    },
+    created() {
+        this.setInterval();
     }
 }
 </script>
@@ -100,5 +112,10 @@ export default {
         background-repeat: no-repeat
         width: 100%
         height: 415px
+  @media only screen and (max-width: 340px)
+    .cubemetr
+      width: 100%
+      &--wrapper__absolute
+        display: none
 </style>
 

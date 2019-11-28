@@ -83,7 +83,7 @@
       text-shadow: #00ca00 0px 0px 4px, #006f3a 0px 0px 7px
   @media only screen and (max-width: 512px)
     .header
-      height: unset
+      height: 209px
       &__name
         font-size: 38px
       &__name--description
