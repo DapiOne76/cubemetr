@@ -83,7 +83,7 @@
       font-family: "BicubikRegular"
       font-size: 52px
       font-weight: bold
-      -webkit-text-stroke: 2px #0FB609
+      -webkit-text-stroke: 1px #0FB609
       -webkit-filter: drop-shadow(2px 3px 2px black)
       filter: drop-shadow(2px 3px 2px black)
       > span

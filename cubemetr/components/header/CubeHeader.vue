@@ -10,7 +10,7 @@
           </div>
         </div>
         <div class="header__number">
-          <span v-text="'8-908-027-07-54'"></span>
+          <span v-text="'8-908-027-07-43'"></span>
         </div>
       </div>
       <span class="header__address" v-text="'АДРЕС: УЛ.РАСТОРГУЕВА 20 А'"></span>
@@ -52,8 +52,8 @@
       margin-bottom: 65px
     &__time--number__wrapper
       display: flex
-      justify-content: space-around
-      margin-bottom: 28px
+      justify-content: space-between
+      margin-bottom: 31px
       padding-right: 5%
     &__watch
       display: flex
@@ -61,16 +61,17 @@
         display: flex
         flex-direction: column
         justify-content: center
-        font-size: 42px
-        margin-left: 130px
+        font-family: Arial
+        font-size: 45px
+        margin-left: 150px
         text-shadow: #00ca00 0px 0px 2px, #006f3a 0px 0px 3px
     &__number
-      margin-left: 30px
       position: relative
       display: flex
       justify-content: center
       align-items: center
-      -webkit-text-stroke: 2px #00ca00
+      padding-right: 20px
+      -webkit-text-stroke: 1px #00ca00
       > span
         font-size: 47px
         z-index: 2

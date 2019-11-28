@@ -2,7 +2,10 @@
   <div class="cubemetr--wrapper">
     <div class="cubemetr">
       <cube-header/>
-      <img class="cubemetr--img" src="./25-sosna.png">
+      <slider
+        :value="valueSlider"
+        @onChange="curImg"
+      />
       <menu-table/>
       <client-only>
         <cube-footer/>
@@ -10,7 +13,10 @@
     </div>
     <div class="cubemetr--wrapper__absolute">
       <div class="cubemetr--wrapper__header"></div>
-      <div class="cubemetr--wrapper__img"></div>
+      <slider
+        :value="valueSlider"
+        @onChange="curImg"
+      />
       <div class="cubemetr--wrapper__menu"></div>
       <div class="cubemetr--wrapper__footer"></div>
     </div>
@@ -22,8 +28,17 @@
 import CubeHeader from "../components/header/CubeHeader";
 import MenuTable from "../components/menu/MenuTable";
 import CubeFooter from "../components/footer/CubeFooter";
+import Slider from "../components/slider";
 export default {
-    components: {CubeFooter, MenuTable, CubeHeader},
+    components: {Slider, CubeFooter, MenuTable, CubeHeader},
+    data: () => ({
+        valueSlider: 0
+    }),
+    methods: {
+        curImg(i) {
+            this.valueSlider = i;
+        },
+    }
 }
 </script>
 
@@ -57,6 +72,8 @@ export default {
         height: 100%
         -webkit-filter: blur(10px)
         filter: blur(10px)
+        .aboutUsSlider__img
+          height: 375px
       &__header
         width: 100%
         background-image: url(../components/header/FON_ShAPKA_Clear.jpg)
@@ -66,15 +83,6 @@ export default {
         background-size: 100% /* Современные браузеры */
         background-repeat: no-repeat
         height: 700px
-      &__img
-        background-image: url(./25-sosna.png)
-        -moz-background-size: 100% /* Firefox 3.6+ */
-        -webkit-background-size: 100% /* Safari 3.1+ и Chrome 4.0+ */
-        -o-background-size: 100% /* Opera 9.6+ */
-        background-size: 100% /* Современные браузеры */
-        background-repeat: no-repeat
-        width: 100%
-        height: 398px
       &__menu
         background-image: url(../components/menu/FON.jpg)
         -moz-background-size: 100% /* Firefox 3.6+ */
@@ -92,8 +100,5 @@ export default {
         background-repeat: no-repeat
         width: 100%
         height: 415px
-    &--img
-      width: 100%
-      height: 433px
 </style>
 

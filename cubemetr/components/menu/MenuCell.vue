@@ -40,6 +40,8 @@
       text-align: right
       z-index: 1
       background-color: rgba(210, 105, 30, 0.5)
+      &:last-child
+        padding-left: 15px
     &__img
       position: absolute
       width: 100%
