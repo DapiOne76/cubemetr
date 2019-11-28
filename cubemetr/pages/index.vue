@@ -112,7 +112,7 @@ export default {
         background-repeat: no-repeat
         width: 100%
         height: 415px
-  @media only screen and (max-width: 340px)
+  @media only screen and (max-width: 512px)
     .cubemetr
       width: 100%
       &--wrapper__absolute

@@ -87,8 +87,9 @@
       &__name
         font-size: 38px
       &__name--description
-        font-size: 16px
+        font-size: 10px
         margin-bottom: unset
+        padding-bottom: 25px
         padding-left: 15%
       &__watch
         &--image
@@ -96,14 +97,17 @@
           height: 82px
         &--description
           font-size: 11px
+          margin-left: 42px
       &__number
         width: 160px
         height: 25px
-        align-self: center
+        justify-content: flex-end
+        padding-right: 20px
+        -webkit-text-stroke: unset
         > span
-          font-size: 10px
+          font-size: 12px
       &__time--number__wrapper
-        margin-bottom: unset
+        margin-bottom: 11px
       &__address
         font-size: 18px
   @media only screen and (max-width: 340px)

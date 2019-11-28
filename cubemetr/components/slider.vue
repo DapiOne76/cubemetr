@@ -88,5 +88,9 @@
       }
     }
   }
-
+  @media only screen and (max-width: 512px) {
+    .aboutUsSlider__img {
+      height: 170px;
+    }
+  }
 </style>
