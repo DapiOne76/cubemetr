@@ -9,6 +9,7 @@
         v-for="cell in cells"
         :key="cell.name"
         :item="cell"
+        @clickOnCell="clickCell"
       />
     </div>
     <span class="menuTable--adwords" v-text="'Для строительных бригад, застройщиков и строительных компаний, предоставляется VIP скидка.'"></span>
@@ -16,47 +17,20 @@
 </template>
 
 <script>
+  import common from "./common/common";
   import MenuCell from "./MenuCell";
   export default {
     name: "MenuTable",
       components: {MenuCell},
       data: () => ({
-        cells: [
-            {
-                name: 'ИМИТАЦИЯ БРУСА',
-                src: 'Imitatsia_brusa'
-            },
-            {
-                name: 'ПОГОНАЖНЫЕ ИЗДЕЛИЯ',
-                src: 'Pogonazhnye_izdelia'
-
-            },
-            {
-                name: 'ЕВРОВАГОНКА',
-                src: 'Vagonka'
-            },
-            {
-                name: 'ВАГОНКА ШТИЛЬ',
-                src: 'Evrovagonka_shtil'
-            },
-            {
-                name: 'ДОСКА ПОЛА',
-                src: 'Doska_pola'
-            },
-            {
-                name: 'БРУСОК',
-                src: 'Brusok'
-            },
-            {
-                name: 'БЛОК ХАУС',
-                src: 'Blok_khaus'
-            },
-            {
-                name: 'ЭЛЕМЕНТЫ ЛЕСТНИЦ',
-                src: 'Elementy_lestnitsy'
-            },
-        ]
-    })
+        cells: common.cells
+    }),
+    methods: {
+      clickCell(item) {
+        console.log('menuTable');
+        this.$emit('clickOnCell', item)
+      }
+    }
   }
 </script>
 

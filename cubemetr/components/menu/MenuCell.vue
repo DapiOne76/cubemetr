@@ -1,5 +1,5 @@
 <template>
-  <div class="menuCell">
+  <div @click="clickCell" class="menuCell">
     <img :class="srcImg">
     <span v-text="item.name"></span>
   </div>
@@ -15,6 +15,12 @@
         srcImg() {
             return `menuCell__img img-${this.item.src}`
         }
+    },
+    methods: {
+      clickCell() {
+        console.log('menuCell');
+        this.$emit('clickOnCell', this.item)
+      }
     }
   }
 </script>

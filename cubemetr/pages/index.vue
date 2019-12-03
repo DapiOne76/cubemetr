@@ -1,12 +1,18 @@
 <template>
   <div class="cubemetr--wrapper">
+    <tool-tip
+      v-if="itemToolTip.show"
+      :item="itemToolTip"
+      />
     <div class="cubemetr">
       <cube-header/>
       <slider
         :value="valueSlider"
         @onChange="curImg"
       />
-      <menu-table/>
+      <menu-table
+        @clickOnCell="clickCell"
+      />
       <client-only>
         <cube-footer/>
       </client-only>
@@ -29,24 +35,45 @@ import CubeHeader from "../components/header/CubeHeader";
 import MenuTable from "../components/menu/MenuTable";
 import CubeFooter from "../components/footer/CubeFooter";
 import Slider from "../components/slider";
+import ToolTip from "../components/tooltip/toolTip";
 export default {
-    components: {Slider, CubeFooter, MenuTable, CubeHeader},
+    components: {ToolTip, Slider, CubeFooter, MenuTable, CubeHeader},
     data: () => ({
-        valueSlider: 0,
-        interval: null
+      itemToolTip: {
+        show: false,
+        name: '',
+        items: []
+      },
+      valueSlider: 0,
+      interval: null
     }),
     methods: {
-        curImg(i) {
-            clearInterval(this.interval)
-            this.valueSlider = i;
-            this.setInterval();
-        },
-        setSliderValue() {
-            this.valueSlider = (this.valueSlider === 0) ? 1: 0
-        },
-        setInterval() {
-            this.interval = setInterval(this.setSliderValue, 3000)
+      curImg(i) {
+          clearInterval(this.interval)
+          this.valueSlider = i;
+          this.setInterval();
+      },
+      setSliderValue() {
+          this.valueSlider = (this.valueSlider === 0) ? 1: 0
+      },
+      setInterval() {
+          this.interval = setInterval(this.setSliderValue, 3000)
+      },
+      clearItem() {
+        this.itemToolTip = {
+          show: true,
+          name: '',
+          items: [],
         }
+      },
+      clickCell(item) {
+        console.log('index');
+        this.itemToolTip = {
+          show: true,
+          name: item.name,
+          items: item.items,
+        }
+      }
     },
     created() {
         this.setInterval();
