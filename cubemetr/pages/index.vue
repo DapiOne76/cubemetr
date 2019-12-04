@@ -3,6 +3,7 @@
     <tool-tip
       v-if="itemToolTip.show"
       :item="itemToolTip"
+      @closeToolTip="clearItem"
       />
     <div class="cubemetr">
       <cube-header/>
@@ -61,7 +62,7 @@ export default {
       },
       clearItem() {
         this.itemToolTip = {
-          show: true,
+          show: false,
           name: '',
           items: [],
         }

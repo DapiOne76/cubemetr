@@ -81,6 +81,116 @@ export default {
           img: image1,
           enabled: true
         },
+        {
+          name: 'Какой то товар',
+          size: '17х146х6000',
+          count: 0,
+          calc: 0,
+          price: 2300,
+          sort: 'АВ',
+          img: image1,
+          enabled: true
+        },
+        {
+          name: 'Какой то товар',
+          size: '17х146х6000',
+          count: 0,
+          calc: 0,
+          price: 2300,
+          sort: 'АВ',
+          img: image1,
+          enabled: true
+        },
+        {
+          name: 'Какой то товар',
+          size: '17х146х6000',
+          count: 0,
+          calc: 0,
+          price: 2300,
+          sort: 'АВ',
+          img: image1,
+          enabled: true
+        },
+        {
+          name: 'Какой то товар',
+          size: '17х146х6000',
+          count: 0,
+          calc: 0,
+          price: 2300,
+          sort: 'АВ',
+          img: image1,
+          enabled: true
+        },
+        {
+          name: 'Какой то товар',
+          size: '17х146х6000',
+          count: 0,
+          calc: 0,
+          price: 2300,
+          sort: 'АВ',
+          img: image1,
+          enabled: true
+        },
+        {
+          name: 'Какой то товар',
+          size: '17х146х6000',
+          count: 0,
+          calc: 0,
+          price: 2300,
+          sort: 'АВ',
+          img: image1,
+          enabled: true
+        },
+        {
+          name: 'Какой то товар',
+          size: '17х146х6000',
+          count: 0,
+          calc: 0,
+          price: 2300,
+          sort: 'АВ',
+          img: image1,
+          enabled: true
+        },
+        {
+          name: 'Какой то товар',
+          size: '17х146х6000',
+          count: 0,
+          calc: 0,
+          price: 2300,
+          sort: 'АВ',
+          img: image1,
+          enabled: true
+        },
+        {
+          name: 'Какой то товар',
+          size: '17х146х6000',
+          count: 0,
+          calc: 0,
+          price: 2300,
+          sort: 'АВ',
+          img: image1,
+          enabled: true
+        },
+        {
+          name: 'Какой то товар',
+          size: '17х146х6000',
+          count: 0,
+          calc: 0,
+          price: 2300,
+          sort: 'АВ',
+          img: image1,
+          enabled: true
+        },
+        {
+          name: 'Какой то товар',
+          size: '17х146х6000',
+          count: 0,
+          calc: 0,
+          price: 2300,
+          sort: 'АВ',
+          img: image1,
+          enabled: true
+        },
       ],
       src: 'Pogonazhnye_izdelia'
     },
