@@ -19,6 +19,7 @@
           class="toolTip__menu--row"
           v-for="(common, i) in item.items"
           :key="i"
+          :class="(!common.enabled) ? 'disabled' : ''"
         >
           <div>
             <span v-text="common.name"></span>
@@ -81,6 +82,22 @@
   align-items: center;
   flex-direction: column;
   color: #493f39;
+  .disabled {
+    pointer-events: none;
+    position: relative;
+    &:before {
+      content: 'Временно отутствует';
+      font-size: 26px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(120, 110, 103, 0.42);
+    }
+  }
   .pointer {
     border-radius: 50%;
     background-color: transparent;
