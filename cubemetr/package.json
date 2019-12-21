@@ -1,7 +1,7 @@
 {
   "name": "cubemetr",
   "version": "1.0.0",
-  "description": "Nuxt.js project",
+  "description": "Кубометр, продажа сухого строганого пиломатериала, деревяшка, отделка фасадов, дерево, имитация бруса, строительный магазин",
   "author": "MedzuraTakesan <bingo7696@gmail.com>",
   "private": true,
   "scripts": {

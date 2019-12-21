@@ -38,6 +38,13 @@ import CubeFooter from "../components/footer/CubeFooter";
 import Slider from "../components/slider";
 import ToolTip from "../components/tooltip/toolTip";
 export default {
+    head: {
+      title: 'Кубометр',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      ],
+    },
     components: {ToolTip, Slider, CubeFooter, MenuTable, CubeHeader},
     data: () => ({
       itemToolTip: {

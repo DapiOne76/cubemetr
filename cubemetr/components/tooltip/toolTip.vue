@@ -23,7 +23,7 @@
         >
           <div>
             <span v-text="common.name"></span>
-            <img :src="common.img" width="100" height="100">
+            <img :src="common.img">
           </div>
           <div><span v-text="common.size"></span></div>
           <div><span v-text="common.sort"></span></div>
@@ -178,6 +178,10 @@
         align-items: center;
         &:nth-child(1) {
           width: 200px;
+          img {
+            width: 100px;
+            height: 100px;
+          }
         }
         &:nth-child(2) {
           width: 150px;
@@ -202,4 +206,59 @@
 
   }
 }
+@media only screen and (max-width: 640px) {
+  .toolTip {
+    &__header,
+    &__menu {
+      width: 80%;
+    }
+    &__header {
+      > span {
+        font-size: 22px;
+      }
+    }
+    &__wrapper {
+      overflow-x: scroll;
+      display: block;
+    }
+    &__menu {
+      height: 60%;
+      &--header {
+        font-size: 12px;
+      }
+      &--header,
+      &--row {
+        div {
+          font-size: 12px;
+          &:nth-child(1) {
+            width: 100px;
+            img {
+              width: 75px;
+              height: 75px;
+            }
+          }
+          &:nth-child(2) {
+            width: 75px;
+          }
+          &:nth-child(3) {
+            width: 30px;
+          }
+          &:nth-child(4) {
+            width: 30px;
+          }
+          &:nth-child(5) {
+            .pointer {
+              font-size: 14px;
+            }
+            width: 30px;
+          }
+          &:nth-child(6) {
+            width: 60px;
+          }
+        }
+      }
+    }
+  }
+}
+
 </style>

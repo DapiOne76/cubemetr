@@ -81,9 +81,37 @@
       font-size: 46px
       align-self: center
       text-shadow: #00ca00 0px 0px 4px, #006f3a 0px 0px 7px
-  @media only screen and (max-width: 512px)
+  @media only screen and (max-width: 400px)
     .header
       height: 209px
+      &__name
+        font-size: 38px
+      &__name--description
+        font-size: 10px
+        margin-bottom: unset
+        padding-left: 15%
+      &__watch
+        &--image
+          width: 82px
+          height: 82px
+        &--description
+          font-size: 11px
+          margin-left: 42px
+      &__number
+        width: 160px
+        height: 25px
+        justify-content: flex-end
+        padding-right: 20px
+        -webkit-text-stroke: unset
+        > span
+          font-size: 12px
+      &__time--number__wrapper
+        margin-bottom: 11px
+      &__address
+        font-size: 18px
+  @media only screen and (max-width: 512px) and (min-width: 400px)
+    .header
+      height: 230px
       &__name
         font-size: 38px
       &__name--description
@@ -112,13 +140,14 @@
         font-size: 18px
   @media only screen and (max-width: 340px)
     .header
-      height: unset
+      height: 171px
       &__name
         font-size: 32px
       &__name--description
-        font-size: 14px
+        font-size: 10px
         margin-bottom: unset
         padding-left: 12%
+        padding-bottom: unset
       &__watch
         &--image
           width: 82px

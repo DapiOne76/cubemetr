@@ -83,4 +83,10 @@
       height: 175px
       > span
         font-size: 24px
+  @media only screen and (max-width: 330px)
+    .menuCell
+      width: 260px
+      height: 175px
+      > span
+        font-size: 24px
 </style>
