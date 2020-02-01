@@ -47,10 +47,12 @@
     flex-direction: column;
     align-items: center;
     .slider1 {
-      background-image: url(./25-sosna.png)
+      background-image: url(./magaz.jpg)
+
     }
     .slider2 {
-      background-image: url(./kaka.jpg)
+      background-image: url(./4444.jpg)
+     
     }
     &__img {
       position: relative;
@@ -61,7 +63,7 @@
       background-repeat: no-repeat;
       background-position: center;
       width: 100%;
-      height: 398px;
+      height: 400px;
       -webkit-transition: all .3s ease-in-out;
       -moz-transition: all .3s ease-in-out;
       transition: all .3s ease-in-out;

@@ -5,15 +5,15 @@
       <div class="header__time--number__wrapper">
         <div class="header__watch">
           <div class="header__watch--description">
-            <span v-text="'пн-пт: с 9:00-18:00'"></span>
-            <span v-text="'сб: с 9:00-15:00'"></span>
+            <span v-text="'пн-пт: с 9:00-19:00'"></span>
+            <span v-text="'сб: с 9:00-16:00'"></span>
           </div>
         </div>
         <div class="header__number">
           <span v-text="'8-908-027-07-43'"></span>
         </div>
       </div>
-      <span class="header__address" v-text="'АДРЕС: УЛ.РАСТОРГУЕВА 20 А'"></span>
+      <span class="header__address" v-text="'УЛ.ВОЛЖСКАЯ НАБЕРЕЖНАЯ 163'"></span>
     </div>
   </div>
 </template>

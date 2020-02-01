@@ -16,10 +16,8 @@
           <img height="28px" width="28px" src="./location.png">
           <span class="cubeFooter__info--description" v-text="'Схема проезда'"></span>
         </div>
-        <span class="cubeFooter__info--explanation" v-text="'Адрес:'"></span>
-        <span v-text="'ул. Промзона Декабристов, 2'"></span>
-        <span class="cubeFooter__info--explanation"  v-text="'E-mail:'"></span>
-        <span v-text="'patrikslava2015@yandex.ru'"></span>
+        <span v-text="'ул. ВОЛЖСКАЯ НАБЕРЕЖНАЯ, 163'"></span>
+        <span class="cubeFooter__info--explanation"  v-text="'E-mail: domoy76@ya.ru'"></span>
       </div>
     </div>
     <div id="map"></div>
@@ -36,10 +34,10 @@
       init() {
         ymaps.ready(() => {
             this.map = new ymaps.Map("map", {
-                center: [57.590957, 39.820349],
+                center: [58.052242, 38.839894],
                 zoom: 13
             });
-            const myGeoObject = new ymaps.Placemark([57.590957, 39.820349], {}, {
+            const myGeoObject = new ymaps.Placemark([58.052242, 38.839894], {}, {
                 preset: 'islands#blueDotIcon'
             });
             this.map.geoObjects.add(myGeoObject);

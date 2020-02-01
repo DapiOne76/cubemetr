@@ -1,4 +1,13 @@
-import image1 from './img/644000754-0.jpg'
+import image1 from './img/imitacia/blocxays.jpg'
+import image2 from './img/imitacia/imitacia1.jpg'
+import image3 from './img/imitacia/Vagonka htil.jpg'
+import image4 from './img/imitacia/Vagonka.jpg'
+import image5 from './img/imitacia/pola.jpg'
+import image6 from './img/imitacia/Брусок.jpg'
+import image7 from './img/imitacia/dee5f88573cccf3cab0635ba37cfee63.jpg'
+
+
+
 
 export default {
   cells: [
@@ -6,33 +15,33 @@ export default {
       name: 'ИМИТАЦИЯ БРУСА',
       items: [
         {
-          name: 'Какой то товар',
-          size: '17х146х6000',
+          name: 'Имитация бруса',
+          size: '16х146х6000',
           count: 0,
           calc: 0,
-          price: 2300,
+          price: 292,
           sort: 'АВ',
-          img: image1,
+          img: image2,
           enabled: true
         },
         {
-          name: 'Какой то товар отсутствует',
+          name: 'Имитация бруса',
           size: '17х146х6000',
           count: 0,
           calc: 0,
-          price: 2300,
+          price: 306,
           sort: 'АВ',
-          img: image1,
-          enabled: false
+          img: image2,
+          enabled: true
         },
         {
-          name: 'Какой то товар',
+          name: 'Имитация бруса',
           size: '17х146х6000',
           count: 0,
           calc: 0,
-          price: 2300,
+          price: 383,
           sort: 'АВ',
-          img: image1,
+          img: image2,
           enabled: true
         },
       ],
@@ -42,152 +51,212 @@ export default {
       name: 'ПОГОНАЖНЫЕ ИЗДЕЛИЯ',
       items: [
         {
-          name: 'Какой то товар',
-          size: '17х146х6000',
+          name: 'Наличник гладкий',
+          size: '60х2200',
           count: 0,
           calc: 0,
-          price: 2300,
-          sort: 'АВ',
+          price: 86,
+          sort: 'А',
           img: image1,
           enabled: true
         },
         {
-          name: 'Какой то товар',
-          size: '17х146х6000',
+          name: 'Наличник гладкий',
+          size: '70х2200',
           count: 0,
           calc: 0,
-          price: 2300,
-          sort: 'АВ',
+          price: 95,
+          sort: 'А',
           img: image1,
           enabled: true
         },
         {
-          name: 'Какой то товар отсутствует',
-          size: '17х146х6000',
+          name: 'Наличник гладкий',
+          size: '80х2200',
           count: 0,
           calc: 0,
-          price: 2300,
-          sort: 'АВ',
-          img: image1,
-          enabled: false
-        },
-        {
-          name: 'Какой то товар',
-          size: '17х146х6000',
-          count: 0,
-          calc: 0,
-          price: 2300,
-          sort: 'АВ',
+          price: 115,
+          sort: 'А',
           img: image1,
           enabled: true
         },
         {
-          name: 'Какой то товар',
-          size: '17х146х6000',
+          name: 'Наличник гладкий',
+          size: '100х2200',
           count: 0,
           calc: 0,
-          price: 2300,
-          sort: 'АВ',
+          price: 140,
+          sort: 'А',
           img: image1,
           enabled: true
         },
         {
-          name: 'Какой то товар',
-          size: '17х146х6000',
+          name: 'Плинтус гладкий',
+          size: '35х3000',
           count: 0,
           calc: 0,
-          price: 2300,
-          sort: 'АВ',
+          price: 72,
+          sort: 'А',
           img: image1,
           enabled: true
         },
         {
-          name: 'Какой то товар',
-          size: '17х146х6000',
+          name: 'Плинтус фигурный',
+          size: '43х3000',
           count: 0,
           calc: 0,
-          price: 2300,
-          sort: 'АВ',
+          price: 81,
+          sort: 'А',
           img: image1,
           enabled: true
         },
         {
-          name: 'Какой то товар',
-          size: '17х146х6000',
+          name: 'Плинтус фигурный',
+          size: '50х3000',
           count: 0,
           calc: 0,
-          price: 2300,
-          sort: 'АВ',
+          price: 100,
+          sort: 'А',
           img: image1,
           enabled: true
         },
         {
-          name: 'Какой то товар',
-          size: '17х146х6000',
+          name: 'Угол гладкий',
+          size: '40х40х2500',
           count: 0,
           calc: 0,
-          price: 2300,
-          sort: 'АВ',
+          price: 88,
+          sort: 'А',
           img: image1,
           enabled: true
         },
         {
-          name: 'Какой то товар',
-          size: '17х146х6000',
+          name: 'Угол гладкий',
+          size: '40х40х3000',
           count: 0,
           calc: 0,
-          price: 2300,
-          sort: 'АВ',
+          price: 105,
+          sort: 'А',
           img: image1,
           enabled: true
         },
         {
-          name: 'Какой то товар',
-          size: '17х146х6000',
+          name: 'Угол гладкий',
+          size: '40х60х2500',
           count: 0,
           calc: 0,
-          price: 2300,
-          sort: 'АВ',
+          price: 110,
+          sort: 'А',
           img: image1,
           enabled: true
         },
         {
-          name: 'Какой то товар',
+          name: 'Угол гладкий 40х60х3000',
           size: '17х146х6000',
           count: 0,
           calc: 0,
-          price: 2300,
-          sort: 'АВ',
+          price: 131,
+          sort: 'А',
           img: image1,
           enabled: true
         },
         {
-          name: 'Какой то товар',
-          size: '17х146х6000',
+          name: 'Угол гладкий',
+          size: '50х50х2500',
           count: 0,
           calc: 0,
-          price: 2300,
-          sort: 'АВ',
+          price: 96,
+          sort: 'А',
           img: image1,
           enabled: true
         },
         {
-          name: 'Какой то товар',
-          size: '17х146х6000',
+          name: 'Угол гладкий',
+          size: '50х50х3000',
           count: 0,
           calc: 0,
-          price: 2300,
-          sort: 'АВ',
+          price: 117,
+          sort: 'А',
           img: image1,
           enabled: true
         },
         {
-          name: 'Какой то товар',
-          size: '17х146х6000',
+          name: 'Угол гладкий',
+          size: '60х60х2500',
           count: 0,
           calc: 0,
-          price: 2300,
-          sort: 'АВ',
+          price: 135,
+          sort: 'А',
+          img: image1,
+          enabled: true
+        },
+        {
+          name: 'Угол гладкий',
+          size: '60х60х3000',
+          count: 0,
+          calc: 0,
+          price: 162,
+          sort: 'А',
+          img: image1,
+          enabled: true
+        },
+        {
+          name: 'Угол внутренний',
+          size: '20х20х3000',
+          count: 0,
+          calc: 0,
+          price: 55,
+          sort: 'А',
+          img: image1,
+          enabled: true
+        },
+        {
+          name: 'Раскладка гладкая',
+          size: '20х3000',
+          count: 0,
+          calc: 0,
+          price: 41,
+          sort: 'А',
+          img: image1,
+          enabled: true
+        },
+        {
+          name: 'Раскладка гладкая',
+          size: '30х3000',
+          count: 0,
+          calc: 0,
+          price: 50,
+          sort: 'А',
+          img: image1,
+          enabled: true
+        },
+        {
+          name: 'раскладка гладкая',
+          size: '40х3000',
+          count: 0,
+          calc: 0,
+          price: 60,
+          sort: 'А',
+          img: image1,
+          enabled: true
+        },
+        {
+          name: 'Раскладка гладкая',
+          size: '30х3000',
+          count: 0,
+          calc: 0,
+          price: 70,
+          sort: 'А',
+          img: image1,
+          enabled: true
+        },
+        {
+          name: 'Коробка дверная',
+          size: '35х90х2100',
+          count: 0,
+          calc: 0,
+          price: 205,
+          sort: 'А',
           img: image1,
           enabled: true
         },
@@ -198,13 +267,33 @@ export default {
       name: 'ЕВРОВАГОНКА',
       items: [
         {
-          name: 'Какой то товар',
-          size: '17х146х6000',
+          name: 'Евровагонка',
+          size: '12,5х96х2400',
           count: 0,
           calc: 0,
-          price: 2300,
+          price: 67,
           sort: 'АВ',
-          img: image1,
+          img: image4,
+          enabled: true
+        },
+        {
+          name: 'Евровагонка',
+          size: '12,5х96х2500',
+          count: 0,
+          calc: 0,
+          price: 70,
+          sort: 'АВ',
+          img: image4,
+          enabled: true
+        },
+        {
+          name: 'Евровагонка',
+          size: '12,5х96х3000',
+          count: 0,
+          calc: 0,
+          price: 81,
+          sort: 'АВ',
+          img: image4,
           enabled: true
         },
       ],
@@ -214,53 +303,13 @@ export default {
       name: 'ВАГОНКА ШТИЛЬ',
       items: [
         {
-          name: 'Какой то товар',
-          size: '17х146х6000',
+          name: 'Евровагонка "Штиль"',
+          size: '13х126х6000',
           count: 0,
           calc: 0,
-          price: 2300,
+          price: 221,
           sort: 'АВ',
-          img: image1,
-          enabled: true
-        },
-        {
-          name: 'Какой то товар отсутствует',
-          size: '17х146х6000',
-          count: 0,
-          calc: 0,
-          price: 2300,
-          sort: 'АВ',
-          img: image1,
-          enabled: false
-        },
-        {
-          name: 'Какой то товар отсутствует',
-          size: '17х146х6000',
-          count: 0,
-          calc: 0,
-          price: 2300,
-          sort: 'АВ',
-          img: image1,
-          enabled: false
-        },
-        {
-          name: 'Какой то товар',
-          size: '17х146х6000',
-          count: 0,
-          calc: 0,
-          price: 2300,
-          sort: 'АВ',
-          img: image1,
-          enabled: true
-        },
-        {
-          name: 'Какой то товар',
-          size: '17х146х6000',
-          count: 0,
-          calc: 0,
-          price: 2300,
-          sort: 'АВ',
-          img: image1,
+          img: image3,
           enabled: true
         },
       ],
@@ -270,24 +319,14 @@ export default {
       name: 'ДОСКА ПОЛА',
       items: [
         {
-          name: 'Какой то товар',
-          size: '17х146х6000',
+          name: 'Доска пола',
+          size: '21х146х6000',
           count: 0,
           calc: 0,
-          price: 2300,
+          price: 610,
           sort: 'АВ',
-          img: image1,
+          img: image5,
           enabled: true
-        },
-        {
-          name: 'Какой то товар отсутствует',
-          size: '17х146х6000',
-          count: 0,
-          calc: 0,
-          price: 2300,
-          sort: 'АВ',
-          img: image1,
-          enabled: false
         },
       ],
       src: 'Doska_pola'
@@ -296,133 +335,303 @@ export default {
       name: 'БРУСОК',
       items: [
         {
-          name: 'Какой то товар',
-          size: '17х146х6000',
+          name: 'Брусок строганный',
+          size: '20х45х3000',
           count: 0,
           calc: 0,
-          price: 2300,
+          price: 51,
           sort: 'АВ',
-          img: image1,
+          img: image6,
           enabled: true
         },
         {
-          name: 'Какой то товар',
-          size: '17х146х6000',
+          name: 'Брусок строганный',
+          size: '40х40х3000',
           count: 0,
           calc: 0,
-          price: 2300,
+          price: 91,
           sort: 'АВ',
-          img: image1,
+          img: image6,
           enabled: true
         },
         {
-          name: 'Какой то товар',
-          size: '17х146х6000',
+          name: 'Брусок строганный',
+          size: '40х50х3000',
           count: 0,
           calc: 0,
-          price: 2300,
+          price: 114,
           sort: 'АВ',
-          img: image1,
+          img: image6,
           enabled: true
         },
         {
-          name: 'Какой то товар',
-          size: '17х146х6000',
+          name: 'Брусок строганный',
+          size: '50х50х3000',
           count: 0,
           calc: 0,
-          price: 2300,
+          price: 142,
           sort: 'АВ',
-          img: image1,
+          img: image6,
           enabled: true
         },
         {
-          name: 'Какой то товар',
-          size: '17х146х6000',
+          name: 'Брусок строганный',
+          size: '40х60х3000',
           count: 0,
           calc: 0,
-          price: 2300,
+          price: 136,
           sort: 'АВ',
-          img: image1,
+          img: image6,
           enabled: true
         },
         {
-          name: 'Какой то товар отсутствует',
-          size: '17х146х6000',
+          name: 'Брусок строганный',
+          size: '40х70х3000',
           count: 0,
           calc: 0,
-          price: 2300,
+          price: 160,
           sort: 'АВ',
-          img: image1,
-          enabled: false
+          img: image6,
+          enabled: true
         },
       ],
       src: 'Brusok'
     },
     {
-      name: 'БЛОК ХАУС',
+      name: 'МЕБЕЛЬНЫЕ ЩИТЫ',
       items: [
         {
-          name: 'Какой то товар',
-          size: '17х146х6000',
+          name: 'Мебельный щит',
+          size: '18х200х2000',
           count: 0,
           calc: 0,
-          price: 2300,
+          price: 275,
           sort: 'АВ',
-          img: image1,
+          img: image7,
           enabled: true
         },
         {
-          name: 'Какой то товар',
-          size: '17х146х6000',
+          name: 'Мебельный щит',
+          size: '18х200х2500',
           count: 0,
           calc: 0,
-          price: 2300,
+          price: 345,
           sort: 'АВ',
-          img: image1,
+          img: image7,
           enabled: true
         },
+        {
+          name: 'Мебельный щит',
+          size: '18х200х3000',
+          count: 0,
+          calc: 0,
+          price: 415,
+          sort: 'АВ',
+          img: image7,
+          enabled: true
+        },
+        {
+          name: 'Мебельный щит',
+          size: '18х300х2000',
+          count: 0,
+          calc: 0,
+          price: 410,
+          sort: 'АВ',
+          img: image7,
+          enabled: true
+        },
+        {
+          name: 'Мебельный щит',
+          size: '18х300х2500',
+          count: 0,
+          calc: 0,
+          price: 515,
+          sort: 'АВ',
+          img: image7,
+          enabled: true
+        },
+        {
+          name: 'Мебельный щит',
+          size: '18х300х3000',
+          count: 0,
+          calc: 0,
+          price: 615,
+          sort: 'АВ',
+          img: image7,
+          enabled: true
+        }, 
       ],
-      src: 'Blok_khaus'
+      src: 'Mebelnii_shield'
     },
     {
       name: 'ЭЛЕМЕНТЫ ЛЕСТНИЦ',
       items: [
         {
-          name: 'Какой то товар',
-          size: '17х146х6000',
+          name: 'Тетива',
+          size: '50х300х3000',
           count: 0,
           calc: 0,
-          price: 2300,
+          price: 1840,
           sort: 'АВ',
           img: image1,
           enabled: true
         },
         {
-          name: 'Какой то товар',
-          size: '17х146х6000',
+          name: 'Тетива',
+          size: '50х300х4000',
           count: 0,
           calc: 0,
-          price: 2300,
+          price: 2450,
           sort: 'АВ',
           img: image1,
           enabled: true
         },
         {
-          name: 'Какой то товар отсутствует',
-          size: '17х146х6000',
+          name: 'Ступень',
+          size: '40х200х800',
           count: 0,
           calc: 0,
-          price: 2300,
+          price: 230,
           sort: 'АВ',
           img: image1,
-          enabled: false
+          enabled: true
         },
         {
-          name: 'Какой то товар',
-          size: '17х146х6000',
+          name: 'Ступень',
+          size: '40х300х800',
           count: 0,
           calc: 0,
-          price: 2300,
+          price: 345,
+          sort: 'АВ',
+          img: image1,
+          enabled: true
+        },
+        {
+          name: 'Ступень',
+          size: '40х300х900',
+          count: 0,
+          calc: 0,
+          price: 390,
+          sort: 'АВ',
+          img: image1,
+          enabled: true
+        },
+        {
+          name: 'Ступень',
+          size: '40х300х3000',
+          count: 0,
+          calc: 0,
+          price: 1285,
+          sort: 'АВ',
+          img: image1,
+          enabled: true
+        },
+        {
+          name: 'Площадка',
+          size: '40х1000х1000',
+          count: 0,
+          calc: 0,
+          price: 1430,
+          sort: 'АВ',
+          img: image1,
+          enabled: true
+        },
+        {
+          name: 'Площадка',
+          size: '40х1000х1200',
+          count: 0,
+          calc: 0,
+          price: 2860,
+          sort: 'АВ',
+          img: image1,
+          enabled: true
+        },
+        {
+          name: 'Столб начальный Рим',
+          size: '80х80х1200',
+          count: 0,
+          calc: 0,
+          price: 540,
+          sort: 'А',
+          img: image1,
+          enabled: true
+        },
+        {
+          name: 'Столб начальный Рим',
+          size: '90х90х1200',
+          count: 0,
+          calc: 0,
+          price: 630,
+          sort: 'А',
+          img: image1,
+          enabled: true
+        },
+        {
+          name: 'Столб начальный Англия',
+          size: '80х80х1200',
+          count: 0,
+          calc: 0,
+          price: 480,
+          sort: 'АВ',
+          img: image1,
+          enabled: true
+        },
+        {
+          name: 'Столб начальный Англия',
+          size: '40х1000х1200',
+          count: 0,
+          calc: 0,
+          price: 2860,
+          sort: 'АВ',
+          img: image1,
+          enabled: true
+        },
+        {
+          name: 'Площадка',
+          size: '40х1000х1200',
+          count: 0,
+          calc: 0,
+          price: 2860,
+          sort: 'АВ',
+          img: image1,
+          enabled: true
+        },
+        {
+          name: 'Площадка',
+          size: '40х1000х1200',
+          count: 0,
+          calc: 0,
+          price: 2860,
+          sort: 'АВ',
+          img: image1,
+          enabled: true
+        },
+        {
+          name: 'Площадка',
+          size: '40х1000х1200',
+          count: 0,
+          calc: 0,
+          price: 2860,
+          sort: 'АВ',
+          img: image1,
+          enabled: true
+        },
+        {
+          name: 'Площадка',
+          size: '40х1000х1200',
+          count: 0,
+          calc: 0,
+          price: 2860,
+          sort: 'АВ',
+          img: image1,
+          enabled: true
+        },
+        {
+          name: 'Площадка',
+          size: '40х1000х1200',
+          count: 0,
+          calc: 0,
+          price: 2860,
           sort: 'АВ',
           img: image1,
           enabled: true

@@ -42,7 +42,9 @@ export default {
       title: 'Кубометр',
       meta: [
         { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'keywords', content: 're,jvtnh, re,jvtnh76, кубометр, кубометр76, имитация, имитация бруса, доска, доска пола, евровагонка, вагонка Штиль, наличник, плинтус, раскладки, угол внешний, угол внутренний, брусок строганный, поручни, тетива, подоконники, балясины, начальные столбы для лестниц, и ограждений ступени' },
+        { name: 'yandex-verification', content: 'b61e4757c6a38f32' }
       ],
     },
     components: {ToolTip, Slider, CubeFooter, MenuTable, CubeHeader},

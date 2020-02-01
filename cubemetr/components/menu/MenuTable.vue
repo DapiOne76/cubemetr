@@ -12,13 +12,16 @@
         @clickOnCell="clickCell"
       />
     </div>
-    <span class="menuTable--adwords" v-text="'Для строительных бригад, застройщиков и строительных компаний, предоставляется VIP скидка.'"></span>
+    <a class="menuTable__file"  href="/text.jpg" target="_blank">Прайс на товары</a>
+    <span class="menuTable--adwords" v-text="'Актуальные цены от 01.01.2020 года. Для строительных бригад, застройщиков и строительных компаний, предоставляется VIP скидка.'"></span>
   </div>
 </template>
 
 <script>
   import common from "./common/common";
   import MenuCell from "./MenuCell";
+  
+
   export default {
     name: "MenuTable",
       components: {MenuCell},
@@ -47,6 +50,14 @@
     justify-content: center
     align-content: center
     position: relative
+    &__file
+      align-self: center
+      font-weight: bold
+      font-size: 42px
+      color: yellow
+      transition: color 0.2s
+      &:hover
+        color: #DBCB00
     &__title
       display: flex
       padding: 15px
@@ -104,8 +115,8 @@
         -webkit-background-size: cover /* Safari 3.1+ и Chrome 4.0+ */
         -o-background-size: cover /* Opera 9.6+ */
         background-size: cover /* Современные браузеры */
-      .img-Blok_khaus
-        background-image: url(./menuIImg/Blok_khaus.jpg)
+      .img-Mebelnii_shield
+        background-image: url(./menuIImg/dee5f88573cccf3cab0635ba37cfee63.jpg)
         -moz-background-size: cover /* Firefox 3.6+ */
         -webkit-background-size: cover /* Safari 3.1+ и Chrome 4.0+ */
         -o-background-size: cover /* Opera 9.6+ */
