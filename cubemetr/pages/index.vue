@@ -82,6 +82,7 @@ export default {
           show: true,
           name: item.name,
           items: item.items,
+          advertising: item.advertising
         }
       }
     },

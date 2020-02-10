@@ -5,6 +5,7 @@ import image4 from './img/imitacia/Vagonka.jpg'
 import image5 from './img/imitacia/pola.jpg'
 import image6 from './img/imitacia/Брусок.jpg'
 import image7 from './img/imitacia/dee5f88573cccf3cab0635ba37cfee63.jpg'
+import imageReclama from './img/reclama/reclama.jpg'
 
 
 
@@ -13,6 +14,7 @@ export default {
   cells: [
     {
       name: 'ИМИТАЦИЯ БРУСА',
+      advertising: imageReclama,
       items: [
         {
           name: 'Имитация бруса',
@@ -49,6 +51,7 @@ export default {
     },
     {
       name: 'ПОГОНАЖНЫЕ ИЗДЕЛИЯ',
+      advertising: null,
       items: [
         {
           name: 'Наличник гладкий',
@@ -265,6 +268,7 @@ export default {
     },
     {
       name: 'ЕВРОВАГОНКА',
+      advertising: null,
       items: [
         {
           name: 'Евровагонка',
@@ -301,6 +305,7 @@ export default {
     },
     {
       name: 'ВАГОНКА ШТИЛЬ',
+      advertising: null,
       items: [
         {
           name: 'Евровагонка "Штиль"',
@@ -317,6 +322,7 @@ export default {
     },
     {
       name: 'ДОСКА ПОЛА',
+      advertising: null,
       items: [
         {
           name: 'Доска пола',
@@ -333,6 +339,7 @@ export default {
     },
     {
       name: 'БРУСОК',
+      advertising: null,
       items: [
         {
           name: 'Брусок строганный',
@@ -399,6 +406,7 @@ export default {
     },
     {
       name: 'МЕБЕЛЬНЫЕ ЩИТЫ',
+      advertising: null,
       items: [
         {
           name: 'Мебельный щит',
@@ -459,12 +467,13 @@ export default {
           sort: 'АВ',
           img: image7,
           enabled: true
-        }, 
+        },
       ],
       src: 'Mebelnii_shield'
     },
     {
       name: 'ЭЛЕМЕНТЫ ЛЕСТНИЦ',
+      advertising: null,
       items: [
         {
           name: 'Тетива',

@@ -6,14 +6,20 @@
       <span v-text="item.name"></span>
     </div>
     <div class="toolTip__menu">
-          <div class="toolTip__menu--header">
-            <div>Название</div>
-            <div>Размер</div>
-            <div>Сорт</div>
-            <div>Цена</div>
-            <div>Кол-во</div>
-            <div>Сумма</div>
-          </div>
+      <div
+        class="toolTip__helper"
+        @click="missClick"
+        v-text="helper.text"
+      >
+      </div>
+      <div class="toolTip__menu--header">
+        <div>Название</div>
+        <div>Размер</div>
+        <div>Сорт</div>
+        <div>Цена</div>
+        <div>Кол-во</div>
+        <div>Сумма</div>
+      </div>
       <div class="toolTip__wrapper">
         <div
           class="toolTip__menu--row"
@@ -36,17 +42,28 @@
           <div v-text="common.calc"></div>
         </div>
       </div>
+      <advertising v-if="item.advertising !== null" :advertising="item.advertising"/>
     </div>
   </div>
 </template>
 
 <script>
+  import Advertising from "./advertising";
   export default {
     name: "toolTip",
+    components: {Advertising},
     props: {
       item: Object
     },
+    data: () => ({
+      helper: {
+        text: 'Чтобы закрыть, просто кликните на затемненную область'
+      }
+    }),
     methods: {
+      missClick() {
+        this.$emit('closeToolTip')
+      },
       closeToolTip(e) {
         if (e.target.classList.value === 'toolTip') {
           this.$emit('closeToolTip')
@@ -73,6 +90,7 @@
 .toolTip {
   background-color: rgba(0, 0, 0, 0.45);
   top: 0;
+  transition: background-color .3s;
   position: fixed;
   z-index: 5;
   width: 100%;
@@ -82,6 +100,20 @@
   align-items: center;
   flex-direction: column;
   color: #493f39;
+  &__helper {
+    color: #7f828b;
+    position: absolute;
+    font-size: 16px;
+    top: 10px;
+    width: 150px;
+    z-index: 99999;
+    right: -160px;
+    transition: color .3s;
+    cursor: pointer;
+    &:hover {
+      color: #f7f8fb;
+    }
+  }
   .disabled {
     pointer-events: none;
     position: relative;
@@ -143,6 +175,7 @@
     height: 720px;
     background-color: #f7f8fb;
     border-radius: 25px;
+    position: relative;
     display: flex;
     flex-direction: column;
     &--header {
@@ -171,7 +204,7 @@
     &--header,
     &--row {
       display: flex;
-      div {
+      > div {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -179,8 +212,18 @@
         &:nth-child(1) {
           width: 200px;
           img {
+            top: 0;
+            left: 0;
             width: 100px;
             height: 100px;
+            transition: height .3s, width .3s, top .3s, left .3s;
+            &:hover {
+              left: -50px;
+              top: -50px;
+              width: 200px;
+              height: 200px;
+              z-index: 9999;
+            }
           }
         }
         &:nth-child(2) {
