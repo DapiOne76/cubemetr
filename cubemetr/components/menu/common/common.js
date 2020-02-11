@@ -1,12 +1,35 @@
-import image1 from './img/imitacia/blocxays.jpg'
-import image2 from './img/imitacia/imitacia1.jpg'
-import image3 from './img/imitacia/Vagonka htil.jpg'
-import image4 from './img/imitacia/Vagonka.jpg'
-import image5 from './img/imitacia/pola.jpg'
-import image6 from './img/imitacia/Брусок.jpg'
-import image7 from './img/imitacia/dee5f88573cccf3cab0635ba37cfee63.jpg'
-import imageReclama from './img/reclama/reclama.jpg'
-
+import image1 from './img/menu/imitacia/blocxays.jpg'
+import image2 from './img/menu/imitacia/imitacia1.jpg'
+import image3 from './img/menu/imitacia/Vagonka htil.jpg'
+import image4 from './img/menu/imitacia/Vagonka.jpg'
+import image5 from './img/menu/imitacia/pola.jpg'
+import image6 from './img/menu/imitacia/Брусок.jpg'
+import image7 from './img/menu/imitacia/dee5f88573cccf3cab0635ba37cfee63.jpg'
+import imageEmpty from './img/menu/other/empty2.jpeg'
+import tetiva81990129 from './img/menu/ElementyLesnic/81990129.jpg'
+import tetiva18308951 from './img/menu/ElementyLesnic/18308951.jpg'
+import stypen81990134 from './img/menu/ElementyLesnic/81990134.jpg'
+import stypen644000748 from './img/menu/ElementyLesnic/644000748.jpg'
+import stypen700 from './img/menu/ElementyLesnic/700.jpg'
+import stypenoNNSdxUKGCxYe8DE from './img/menu/ElementyLesnic/oNNSdxUKGCxYe8DE.jpeg'
+import ploshadkapl13414321 from './img/menu/ElementyLesnic/pl13414321.jpeg'
+import ploshadka81990136 from './img/menu/ElementyLesnic/81990136.jpg'
+import stolb2rim_vitoy from './img/menu/ElementyLesnic/2rim_vitoy.jpg'
+import stolbunnamed from './img/menu/ElementyLesnic/unnamed.jpg'
+import stolb2anglia from './img/menu/ElementyLesnic/2anglia.jpg'
+import wit_18h200h2000_e_1 from './img/menu/MebelniShit/wit_18h200h2000_e_1.png'
+import wit_18h300h2000_e_1 from './img/menu/MebelniShit/wit_18h300h2000_e_1.png'
+import wit169553_1 from './img/menu/MebelniShit/169553_1.jpeg'
+import witeeb44ac80f7e6bf0ac1dfb6d8599507a from './img/menu/MebelniShit/eeb44ac80f7e6bf0ac1dfb6d8599507a.jpg'
+import wit446_original from './img/menu/MebelniShit/446_original.jpg'
+import witvologda_mebelnyy_shchit_18kh200kh1300_mm from './img/menu/MebelniShit/vologda_mebelnyy_shchit_18kh200kh1300_mm.jpg'
+import naloriginal_fit from './img/menu/MebelniShit/original-400x400-fit.jpg'
+import plintus1b7eb7c8e3f9ce6def3035a7f7a525f5 from './img/menu/MebelniShit/1b7eb7c8e3f9ce6def3035a7f7a525f5.jpg'
+import plintusb57c781bf8c518f6773eb7c0b5a56987 from './img/menu/MebelniShit/b57c781bf8c518f6773eb7c0b5a56987.jpg'
+import plintusf669c8c4ec2e29b677938c944a695cf4 from './img/menu/MebelniShit/f669c8c4ec2e29b677938c944a695cf4.jpeg'
+import plintus8415b9bfeb22a1470813196807cffad0 from './img/menu/MebelniShit/8415b9bfeb22a1470813196807cffad0.jpg'
+import plintusunnamed2 from './img/menu/MebelniShit/unnamed2.jpg'
+import plintuskorobka_1254 from './img/menu/MebelniShit/korobka_1254.jpg'
 
 
 
@@ -14,7 +37,7 @@ export default {
   cells: [
     {
       name: 'ИМИТАЦИЯ БРУСА',
-      advertising: imageReclama,
+      advertising: null,
       items: [
         {
           name: 'Имитация бруса',
@@ -38,7 +61,7 @@ export default {
         },
         {
           name: 'Имитация бруса',
-          size: '17х146х6000',
+          size: '21х146х6000',
           count: 0,
           calc: 0,
           price: 383,
@@ -60,7 +83,7 @@ export default {
           calc: 0,
           price: 86,
           sort: 'А',
-          img: image1,
+          img: naloriginal_fit,
           enabled: true
         },
         {
@@ -70,7 +93,7 @@ export default {
           calc: 0,
           price: 95,
           sort: 'А',
-          img: image1,
+          img: naloriginal_fit,
           enabled: true
         },
         {
@@ -80,7 +103,7 @@ export default {
           calc: 0,
           price: 115,
           sort: 'А',
-          img: image1,
+          img: naloriginal_fit,
           enabled: true
         },
         {
@@ -90,7 +113,7 @@ export default {
           calc: 0,
           price: 140,
           sort: 'А',
-          img: image1,
+          img: naloriginal_fit,
           enabled: true
         },
         {
@@ -100,7 +123,7 @@ export default {
           calc: 0,
           price: 72,
           sort: 'А',
-          img: image1,
+          img: plintus1b7eb7c8e3f9ce6def3035a7f7a525f5,
           enabled: true
         },
         {
@@ -110,7 +133,7 @@ export default {
           calc: 0,
           price: 81,
           sort: 'А',
-          img: image1,
+          img: plintusb57c781bf8c518f6773eb7c0b5a56987,
           enabled: true
         },
         {
@@ -120,7 +143,7 @@ export default {
           calc: 0,
           price: 100,
           sort: 'А',
-          img: image1,
+          img: plintusb57c781bf8c518f6773eb7c0b5a56987,
           enabled: true
         },
         {
@@ -130,7 +153,7 @@ export default {
           calc: 0,
           price: 88,
           sort: 'А',
-          img: image1,
+          img: plintusf669c8c4ec2e29b677938c944a695cf4,
           enabled: true
         },
         {
@@ -140,7 +163,7 @@ export default {
           calc: 0,
           price: 105,
           sort: 'А',
-          img: image1,
+          img: plintusf669c8c4ec2e29b677938c944a695cf4,
           enabled: true
         },
         {
@@ -150,17 +173,17 @@ export default {
           calc: 0,
           price: 110,
           sort: 'А',
-          img: image1,
+          img: plintusf669c8c4ec2e29b677938c944a695cf4,
           enabled: true
         },
         {
-          name: 'Угол гладкий 40х60х3000',
-          size: '17х146х6000',
+          name: 'Угол гладкий ',
+          size: '40х60х3000',
           count: 0,
           calc: 0,
           price: 131,
           sort: 'А',
-          img: image1,
+          img: plintusf669c8c4ec2e29b677938c944a695cf4,
           enabled: true
         },
         {
@@ -170,7 +193,7 @@ export default {
           calc: 0,
           price: 96,
           sort: 'А',
-          img: image1,
+          img: plintusf669c8c4ec2e29b677938c944a695cf4,
           enabled: true
         },
         {
@@ -180,7 +203,7 @@ export default {
           calc: 0,
           price: 117,
           sort: 'А',
-          img: image1,
+          img: plintusf669c8c4ec2e29b677938c944a695cf4,
           enabled: true
         },
         {
@@ -190,7 +213,7 @@ export default {
           calc: 0,
           price: 135,
           sort: 'А',
-          img: image1,
+          img: plintusf669c8c4ec2e29b677938c944a695cf4,
           enabled: true
         },
         {
@@ -200,7 +223,7 @@ export default {
           calc: 0,
           price: 162,
           sort: 'А',
-          img: image1,
+          img: plintusf669c8c4ec2e29b677938c944a695cf4,
           enabled: true
         },
         {
@@ -210,7 +233,7 @@ export default {
           calc: 0,
           price: 55,
           sort: 'А',
-          img: image1,
+          img: plintus8415b9bfeb22a1470813196807cffad0,
           enabled: true
         },
         {
@@ -220,7 +243,7 @@ export default {
           calc: 0,
           price: 41,
           sort: 'А',
-          img: image1,
+          img: plintusunnamed2,
           enabled: true
         },
         {
@@ -230,17 +253,17 @@ export default {
           calc: 0,
           price: 50,
           sort: 'А',
-          img: image1,
+          img: plintusunnamed2,
           enabled: true
         },
         {
-          name: 'раскладка гладкая',
+          name: 'Раскладка гладкая',
           size: '40х3000',
           count: 0,
           calc: 0,
           price: 60,
           sort: 'А',
-          img: image1,
+          img: plintusunnamed2,
           enabled: true
         },
         {
@@ -250,7 +273,7 @@ export default {
           calc: 0,
           price: 70,
           sort: 'А',
-          img: image1,
+          img: plintusunnamed2,
           enabled: true
         },
         {
@@ -260,7 +283,7 @@ export default {
           calc: 0,
           price: 205,
           sort: 'А',
-          img: image1,
+          img: plintuskorobka_1254,
           enabled: true
         },
       ],
@@ -415,7 +438,7 @@ export default {
           calc: 0,
           price: 275,
           sort: 'АВ',
-          img: image7,
+          img: wit_18h200h2000_e_1,
           enabled: true
         },
         {
@@ -425,7 +448,7 @@ export default {
           calc: 0,
           price: 345,
           sort: 'АВ',
-          img: image7,
+          img: wit169553_1,
           enabled: true
         },
         {
@@ -435,7 +458,7 @@ export default {
           calc: 0,
           price: 415,
           sort: 'АВ',
-          img: image7,
+          img: wit446_original,
           enabled: true
         },
         {
@@ -445,7 +468,7 @@ export default {
           calc: 0,
           price: 410,
           sort: 'АВ',
-          img: image7,
+          img: wit_18h300h2000_e_1,
           enabled: true
         },
         {
@@ -455,7 +478,7 @@ export default {
           calc: 0,
           price: 515,
           sort: 'АВ',
-          img: image7,
+          img: witeeb44ac80f7e6bf0ac1dfb6d8599507a,
           enabled: true
         },
         {
@@ -465,7 +488,7 @@ export default {
           calc: 0,
           price: 615,
           sort: 'АВ',
-          img: image7,
+          img: witvologda_mebelnyy_shchit_18kh200kh1300_mm,
           enabled: true
         },
       ],
@@ -482,7 +505,7 @@ export default {
           calc: 0,
           price: 1840,
           sort: 'АВ',
-          img: image1,
+          img: tetiva81990129,
           enabled: true
         },
         {
@@ -492,7 +515,7 @@ export default {
           calc: 0,
           price: 2450,
           sort: 'АВ',
-          img: image1,
+          img: tetiva18308951,
           enabled: true
         },
         {
@@ -502,7 +525,7 @@ export default {
           calc: 0,
           price: 230,
           sort: 'АВ',
-          img: image1,
+          img: stypen644000748,
           enabled: true
         },
         {
@@ -512,7 +535,7 @@ export default {
           calc: 0,
           price: 345,
           sort: 'АВ',
-          img: image1,
+          img: stypen81990134,
           enabled: true
         },
         {
@@ -522,7 +545,7 @@ export default {
           calc: 0,
           price: 390,
           sort: 'АВ',
-          img: image1,
+          img: stypen700,
           enabled: true
         },
         {
@@ -532,7 +555,7 @@ export default {
           calc: 0,
           price: 1285,
           sort: 'АВ',
-          img: image1,
+          img: stypenoNNSdxUKGCxYe8DE,
           enabled: true
         },
         {
@@ -542,7 +565,7 @@ export default {
           calc: 0,
           price: 1430,
           sort: 'АВ',
-          img: image1,
+          img: ploshadkapl13414321,
           enabled: true
         },
         {
@@ -552,7 +575,7 @@ export default {
           calc: 0,
           price: 2860,
           sort: 'АВ',
-          img: image1,
+          img: ploshadka81990136,
           enabled: true
         },
         {
@@ -562,7 +585,7 @@ export default {
           calc: 0,
           price: 540,
           sort: 'А',
-          img: image1,
+          img: stolb2rim_vitoy,
           enabled: true
         },
         {
@@ -572,7 +595,7 @@ export default {
           calc: 0,
           price: 630,
           sort: 'А',
-          img: image1,
+          img: stolb2rim_vitoy,
           enabled: true
         },
         {
@@ -582,7 +605,7 @@ export default {
           calc: 0,
           price: 480,
           sort: 'АВ',
-          img: image1,
+          img: stolbunnamed,
           enabled: true
         },
         {
@@ -592,59 +615,9 @@ export default {
           calc: 0,
           price: 2860,
           sort: 'АВ',
-          img: image1,
+          img: stolb2anglia,
           enabled: true
-        },
-        {
-          name: 'Площадка',
-          size: '40х1000х1200',
-          count: 0,
-          calc: 0,
-          price: 2860,
-          sort: 'АВ',
-          img: image1,
-          enabled: true
-        },
-        {
-          name: 'Площадка',
-          size: '40х1000х1200',
-          count: 0,
-          calc: 0,
-          price: 2860,
-          sort: 'АВ',
-          img: image1,
-          enabled: true
-        },
-        {
-          name: 'Площадка',
-          size: '40х1000х1200',
-          count: 0,
-          calc: 0,
-          price: 2860,
-          sort: 'АВ',
-          img: image1,
-          enabled: true
-        },
-        {
-          name: 'Площадка',
-          size: '40х1000х1200',
-          count: 0,
-          calc: 0,
-          price: 2860,
-          sort: 'АВ',
-          img: image1,
-          enabled: true
-        },
-        {
-          name: 'Площадка',
-          size: '40х1000х1200',
-          count: 0,
-          calc: 0,
-          price: 2860,
-          sort: 'АВ',
-          img: image1,
-          enabled: true
-        },
+        }
       ],
       src: 'Elementy_lestnitsy'
     },

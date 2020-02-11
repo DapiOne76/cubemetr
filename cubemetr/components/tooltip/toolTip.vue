@@ -41,8 +41,8 @@
           </div>
           <div v-text="common.calc"></div>
         </div>
+        <advertising v-if="item.advertising !== null" :advertising="item.advertising"/>
       </div>
-      <advertising v-if="item.advertising !== null" :advertising="item.advertising"/>
     </div>
   </div>
 </template>
