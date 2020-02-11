@@ -12,7 +12,6 @@
         @clickOnCell="clickCell"
       />
     </div>
-    <a class="menuTable__file"  href="/text.jpg" target="_blank">Прайс на товары</a>
     <span class="menuTable--adwords" v-text="'Актуальные цены от 01.01.2020 года. Для строительных бригад, застройщиков и строительных компаний, предоставляется VIP скидка.'"></span>
   </div>
 </template>
@@ -20,7 +19,7 @@
 <script>
   import common from "./common/common";
   import MenuCell from "./MenuCell";
-  
+
 
   export default {
     name: "MenuTable",

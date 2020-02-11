@@ -52,7 +52,6 @@
     }
     .slider2 {
       background-image: url(./4444.jpg)
-     
     }
     &__img {
       position: relative;

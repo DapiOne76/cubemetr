@@ -7,14 +7,13 @@ import {
 } from './utils'
 
 import NuxtLoading from './components/nuxt-loading.vue'
-import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
 import _6f6c098b from '../layouts/default.vue'
 
 const layouts = { "_default": _6f6c098b }
 
 export default {
-  head: {"title":"cubemetr","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
+  head: {"title":"cubemetr","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Nuxt.js project"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
 
   render (h, props) {
     const loadingEl = h('NuxtLoading', { ref: 'loading' })
@@ -48,7 +47,7 @@ export default {
       }
     }, [
       loadingEl,
-      h(NuxtBuildIndicator),
+
       transitionEl
     ])
   },
@@ -158,10 +157,6 @@ export default {
     },
 
     setLayout (layout) {
-      if(layout && typeof layout !== 'string') {
-        throw new Error('[nuxt] Avoid using non-string value as layout property.')
-      }
-
       if (!layout || !layouts['_' + layout]) {
         layout = 'default'
       }
