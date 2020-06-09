@@ -1,6 +1,11 @@
 <template>
   <div class="targetBlock c-flex-column">
-    <img :width="size || imgW" :height="size || imgH" :src="img"/>
+    <div
+      class="targetBlock-img"
+      :style="getStyle()"
+    >
+      <img :src="img"/>
+    </div>
     <div class="targetBlock-bottom c-flex-column c-flex-align-items-center">
       <h3
         class="targetBlock-title"
@@ -45,6 +50,13 @@
         type: String,
         default: ''
       },
+    },
+    methods: {
+      getStyle() {
+        const width = (this.imgW || this.size) ? `width: ${this.imgW || this.size}px;` : '';
+        const height = (this.imgH || this.size) ? `height: ${this.imgH || this.size}px;` : '';
+        return `${width}${height}`
+      }
     }
   }
 </script>
@@ -52,6 +64,23 @@
 <style lang="less">
 @import "../pages/consts";
 .targetBlock {
+  &-img {
+    overflow: hidden;
+    max-width: 370px;
+    max-height: 260px;
+    img {
+      width: 100%;
+      height: 100%;
+      transition: margin-left .5s, margin-top .5s, width .5s, height .5s;
+    }
+    &:hover {
+      img {
+        margin: -10% 0 0 -10%;
+        width: 120%;
+        height: 120%;
+      }
+    }
+  }
   &-bottom {
     background-color: #F7F7F7;
     padding: 60px 20px 20px;
@@ -85,18 +114,14 @@
     text-decoration: none;
     font-weight: 600;
     margin: 20px 0 5px 0;
+    &:hover {
+      background-color: black;
+      color: white;
+    }
   }
   &-ej {
     font-size: 16px;
     margin-right: -5px;
-  }
-  &:hover {
-    .targetBlock {
-      &-number {
-        background-color: black;
-        color: white;
-      }
-    }
   }
 }
 </style>

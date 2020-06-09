@@ -5,6 +5,9 @@
     </div>
     <head-block/>
     <menu-block/>
+    <client-only>
+      <footer-block/>
+    </client-only>
   </div>
 </template>
 
@@ -12,6 +15,7 @@
 
 import HeadBlock from "../components/headBlock";
 import MenuBlock from "../components/menu/menuBlock";
+import FooterBlock from "../components/footerBlock";
 export default {
     head: {
       title: 'Кубометр',
@@ -36,7 +40,7 @@ export default {
         }
       ]
     },
-    components: {MenuBlock, HeadBlock},
+    components: {FooterBlock, MenuBlock, HeadBlock},
     data: () => ({
     }),
     methods: {
@@ -49,6 +53,7 @@ export default {
 <style lang="less">
   @import "consts";
   @import "styles";
+  @import "pe-icon-7-stroke";
   *{
     font-family: 'Montserrat', sans-serif;
   }

@@ -12,6 +12,16 @@
         img-w="370"
         class="tovars-block"
       />
+      <target-block
+        :title="reklama.title"
+        :img="reklama.img"
+        :description="reklama.description"
+        :ej-phone="reklama.ejPhone"
+        :number="reklama.number"
+        img-h="260"
+        img-w="370"
+        class="tovars-block"
+      />
     </div>
     <div v-if="category ==='ВСЕ' && search === ''" class="tovars-tabs c-flex-justify-content-center">
       <span
@@ -28,12 +38,21 @@
 <script>
   import tovars from "./tovarsData";
   import TargetBlock from "../targetBlock";
+  import reklama from "./tovarsImage/dostavka_rybinsk_kybometr76.jpg";
   export default {
     name: "tovars",
     components: {TargetBlock},
     data: () => ({
       tovars,
-      tabCurrent: 1
+      tabCurrent: 1,
+      reklama: {
+        img: reklama,
+        category: 'Реклама',
+        ejPhone: '📱',
+        title: 'Узнай как оплатить онлайн:',
+        description: 'ГАЗЕЛЬ ДЛИННОЙ: 3М. И 6М.',
+        number: '+7 908 027-07-43'
+      }
     }),
     props: {
       search: String,
@@ -114,7 +133,7 @@
     }
   }
 .tovars {
-  padding: 0 5%;
+  padding: 0 5% 25px;
   &-block {
     margin: 25px;
   }
