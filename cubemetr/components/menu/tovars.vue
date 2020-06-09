@@ -83,10 +83,13 @@
   }
   @-webkit-keyframes pulse {
     0% {
-      -webkit-box-shadow: 0 0 0 0 rgba(255, 194, 0, 0.4);
+      -webkit-box-shadow: 0 0 0 0 rgba(255, 194, 0, 0.8);
     }
-    70% {
-      -webkit-box-shadow: 0 0 0 15px rgba(12, 96, 53, 0);
+    20% {
+      -webkit-box-shadow: 0 0 0 5px rgba(255, 194, 0, 0.7);
+    }
+    60% {
+      -webkit-box-shadow: 0 0 0 15px rgba(12, 96, 53, 0.3);
     }
     100% {
       -webkit-box-shadow: 0 0 0 0 rgba(13, 165, 100, 0);
@@ -94,11 +97,15 @@
   }
   @keyframes pulse {
     0% {
-      -moz-box-shadow: 0 0 0 0 rgba(255, 194, 0, 0.4);
-      box-shadow: 0 0 0 0 rgba(255, 194, 0, 0.4);
+      -moz-box-shadow: 0 0 0 0 rgba(255, 194, 0, 0.8);
+      box-shadow: 0 0 0 0 rgba(255, 194, 0, 0.8);
     }
-    70% {
-      -moz-box-shadow: 0 0 0 15px rgba(12, 96, 53, 0);
+    20% {
+      -moz-box-shadow: 0 0 0 5px rgba(255, 194, 0, 0.7);
+      box-shadow: 0 0 0 5px rgba(255, 194, 0, 0.4);
+    }
+    60% {
+      -moz-box-shadow: 0 0 0 15px rgba(12, 96, 53, 0.3);
       box-shadow: 0 0 0 15px rgba(12, 96, 53, 0);
     }
     100% {
@@ -127,6 +134,9 @@
         animation: pulse .5s;
         @tabColorize()
       }
+    }
+    .tabActive {
+      @tabColorize()
     }
   }
 }
