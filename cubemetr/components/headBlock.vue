@@ -63,6 +63,7 @@
   .headBlock {
     &-content {
       margin-top: 50px;
+      padding: 0 15px;
     }
     &-tovars {
       text-align: center;
@@ -70,10 +71,10 @@
     }
     &-video {
       margin: 0 30px;
-      width: 35%;
+      flex: 1;
       >iframe {
         width: 100%;
-        height: 75%;
+        height: 100%;
       }
     }
     &-img {
