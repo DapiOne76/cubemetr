@@ -1,162 +1,63 @@
 <template>
-  <div class="cubemetr--wrapper">
-    <tool-tip
-      v-if="itemToolTip.show"
-      :item="itemToolTip"
-      @closeToolTip="clearItem"
-      />
-    <div class="cubemetr">
-      <cube-header/>
-      <slider
-        :value="valueSlider"
-        @onChange="curImg"
-      />
-      <menu-table
-        @clickOnCell="clickCell"
-      />
-      <client-only>
-        <cube-footer/>
-      </client-only>
-      <span style="font-size: 6px">Сухой строганный пиломатериал, купить имитация бруса, вагонка штиль, евровагонка, доска пола, отделочные материалы, для бань, саун, бруски, балясины, ступени, тетива, поручни, мебельные щиты, площадки, столешницы, отделочные строганные пиломатериалы, помощь в отделке помещений, продажа в строительном магазине, товары для строительства, строиматериалы, ярославская обл. город Рыбинск.</span>
+  <div class="wrapper c-flex-column">
+    <div class="header c-flex-justify-content-end">
+      Магазин «Кубометр»
     </div>
-    <div class="cubemetr--wrapper__absolute">
-      <div class="cubemetr--wrapper__header"></div>
-      <slider
-        :value="valueSlider"
-        @onChange="curImg"
-      />
-      <div class="cubemetr--wrapper__menu"></div>
-      <div class="cubemetr--wrapper__footer"></div>
-    </div>
+    <head-block/>
+    <menu-block/>
   </div>
 </template>
 
 <script>
 
-import CubeHeader from "../components/header/CubeHeader";
-import MenuTable from "../components/menu/MenuTable";
-import CubeFooter from "../components/footer/CubeFooter";
-import Slider from "../components/slider";
-import ToolTip from "../components/tooltip/toolTip";
+import HeadBlock from "../components/headBlock";
+import MenuBlock from "../components/menu/menuBlock";
 export default {
     head: {
       title: 'Кубометр',
+      htmlAttrs: {
+        lang: 'ru'
+      },
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { "hid":"description","name":"description","content":"Строительный магазин КУБОМЕТР"},
-        { "hid":"description", name: 'keywords', content: 're,jvtnh, re,jvtnh76, кубометр, кубометр76, имитация, имитация бруса, доска, доска пола, евровагонка, вагонка Штиль, наличник, плинтус, раскладки, угол внешний, угол внутренний, брусок строганный, поручни, тетива, подоконники, балясины, начальные столбы для лестниц, и ограждений ступени' },
-        { "hid":"description", name: 'keywords', content: 'Сухой строганный пиломатериал, купить имитация бруса, вагонка штиль, евровагонка, доска пола, отделочные материалы, для бань, саун, бруски, балясины, ступени, тетива, поручни, мебельные щиты, площадки, столешницы, отделочные строганные пиломатериалы, помощь в отделке помещений, продажа в строительном магазине, товары для строительства, строиматериалы, ярославская обл. город Рыбинск.' },
+        { "hid":"keywords", name: 'keywords', content: 're,jvtnh, re,jvtnh76, кубометр, кубометр76, имитация, имитация бруса, доска, доска пола, евровагонка, вагонка Штиль, наличник, плинтус, раскладки, угол внешний, угол внутренний, брусок строганный, поручни, тетива, подоконники, балясины, начальные столбы для лестниц, и ограждений ступени' },
+        { "hid":"keywords", name: 'keywords', content: 'Сухой строганный пиломатериал, купить имитация бруса, вагонка штиль, евровагонка, доска пола, отделочные материалы, для бань, саун, бруски, балясины, ступени, тетива, поручни, мебельные щиты, площадки, столешницы, отделочные строганные пиломатериалы, помощь в отделке помещений, продажа в строительном магазине, товары для строительства, строиматериалы, ярославская обл. город Рыбинск.' },
         { name: 'yandex-verification', content: 'b61e4757c6a38f32' }
       ],
+      link: [
+        {
+          rel: 'stylesheet',
+          id: 'vc_google_fonts_montserrat-css',
+          href: '//fonts.googleapis.com/css?family=Montserrat&amp;subset=latin%2Ccyrillic',
+          type: 'text/css',
+          media: 'all'
+        }
+      ]
     },
-    components: {ToolTip, Slider, CubeFooter, MenuTable, CubeHeader},
+    components: {MenuBlock, HeadBlock},
     data: () => ({
-      itemToolTip: {
-        show: false,
-        name: '',
-        items: []
-      },
-      valueSlider: 0,
-      interval: null
     }),
     methods: {
-      curImg(i) {
-          clearInterval(this.interval)
-          this.valueSlider = i;
-          this.setInterval();
-      },
-      setSliderValue() {
-          this.valueSlider = (this.valueSlider === 0) ? 1: 0
-      },
-      setInterval() {
-          this.interval = setInterval(this.setSliderValue, 3000)
-      },
-      clearItem() {
-        this.itemToolTip = {
-          show: false,
-          name: '',
-          items: [],
-        }
-      },
-      clickCell(item) {
-        console.log('index');
-        this.itemToolTip = {
-          show: true,
-          name: item.name,
-          items: item.items,
-          advertising: item.advertising
-        }
-      }
     },
     created() {
-        this.setInterval();
     }
 }
 </script>
 
-<style lang="sass">
-  @font-face
-    font-family: "BicubikRegular"
-    src: url("../components/fonts/BicubikRegular/BicubikRegular.eot")
-    src: url("../components/fonts/BicubikRegular/BicubikRegular.eot?#iefix")format("embedded-opentype"),
-    url("../components/fonts/BicubikRegular/BicubikRegular.woff") format("woff"),
-    url("../components/fonts/BicubikRegular/BicubikRegular.ttf") format("truetype")
-    font-style: normal
-    font-weight: normal
-  .cubemetr
-    display: flex
-    flex-direction: column
-    align-self: center
-    max-width: 1280px
-    flex-basis: 100%
-    -webkit-filter: drop-shadow(0px 0px 60px black)
-    filter: drop-shadow(0px 0px 60px black)
-    &--wrapper
-      display: flex
-      justify-content: center
-      position: relative
-      &__absolute
-        position: absolute
-        z-index: -999999
-        display: flex
-        flex-direction: column
-        width: 100%
-        height: 100%
-        -webkit-filter: blur(10px)
-        filter: blur(10px)
-        .aboutUsSlider__img
-          height: 375px
-      &__header
-        width: 100%
-        background-image: url(../components/header/FON_ShAPKA_Clear.jpg)
-        -moz-background-size: 100% /* Firefox 3.6+ */
-        -webkit-background-size: 100% /* Safari 3.1+ и Chrome 4.0+ */
-        -o-background-size: 100% /* Opera 9.6+ */
-        background-size: 100% /* Современные браузеры */
-        background-repeat: no-repeat
-        height: 700px
-      &__menu
-        background-image: url(../components/menu/FON.jpg)
-        -moz-background-size: 100% /* Firefox 3.6+ */
-        -webkit-background-size: 100% /* Safari 3.1+ и Chrome 4.0+ */
-        -o-background-size: 100% /* Opera 9.6+ */
-        background-size: 100% /* Современные браузеры */
-        flex: 1
-        width: 100%
-      &__footer
-        background-image: url(../components/footer/footer.jpg)
-        -moz-background-size: 100% /* Firefox 3.6+ */
-        -webkit-background-size: 100% /* Safari 3.1+ и Chrome 4.0+ */
-        -o-background-size: 100% /* Opera 9.6+ */
-        background-size: 100% /* Современные браузеры */
-        background-repeat: no-repeat
-        width: 100%
-        height: 415px
-  @media only screen and (max-width: 512px)
-    .cubemetr
-      width: 100%
-      &--wrapper__absolute
-        display: none
+<style lang="less">
+  @import "consts";
+  @import "styles";
+  *{
+    font-family: 'Montserrat', sans-serif;
+  }
+  .header {
+    background-color: @color-blue;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 8px 40px;
+  }
 </style>
 

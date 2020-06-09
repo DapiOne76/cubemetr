@@ -17,10 +17,10 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
-  // server: {
-  //   port: 3006, // default: 3000
-  //   host: '0.0.0.0' // default: localhost
-  // },
+  server: {
+    port: 3006, // default: 3000
+    host: '0.0.0.0' // default: localhost
+  },
   /*
   ** Build configuration
   */
