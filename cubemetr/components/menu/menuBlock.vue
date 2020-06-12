@@ -40,5 +40,17 @@
       margin-bottom: 20px;
     }
   }
-
+  @media only screen and (max-width: 875px) {
+    .menuBlock {
+      .targetBlock {
+        &-img {
+          max-height: 199px;
+          max-width: 284px;
+        }
+      }
+      &-header {
+        font-size: 40px;
+      }
+    }
+  }
 </style>

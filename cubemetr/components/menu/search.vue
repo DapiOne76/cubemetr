@@ -52,4 +52,13 @@
     }
   }
 }
+  @media only screen and (max-width: 875px) {
+    .search {
+      align-self: center;
+      width: 80%;
+      &-input {
+        width: 100%
+      }
+    }
+  }
 </style>

@@ -55,4 +55,9 @@
     }
   }
 }
+  @media only screen and (max-width: 875px)  {
+    .navigation{
+      width: 250px;
+    }
+  }
 </style>

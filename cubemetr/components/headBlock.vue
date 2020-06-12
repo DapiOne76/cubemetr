@@ -29,13 +29,13 @@
             allowfullscreen=""/>
         </div>
         <target-block
-          :img="leftBlock"
+          :img="magazin"
           size="270"
           title="Режим работы"
           ej-phone="📱"
           ej-title-left="⏳"
           ej-title-right="⌚"
-          description="ВОЛЖСКАЯ НАБЕРЕЖНАЯ, 163 (ВХОД СО СТОРОНЫ НАБЕРЕЖНОЙ)"
+          description="Пн-пт: 09:00 - 19:00 Сб: 09:00 - 16:00"
           number="+7 908 027-07-43"
         />
       </div>
@@ -47,6 +47,7 @@
   import TargetBlock from "./targetBlock";
   import defImg from './default.png'
   import leftBlock from './leftBlock.jpg'
+  import magazin from './menu/tovarsImage/magazin_kubometr_rybinsk-1024x1024.jpg'
 
   export default {
   name: "headBlock",
@@ -54,7 +55,8 @@
     data: () => ({
       image: logo,
       defImg,
-      leftBlock
+      leftBlock,
+      magazin
     })
   }
 </script>
@@ -85,6 +87,20 @@
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+      }
+    }
+  }
+  @media only screen and (max-width: 875px) {
+    .headBlock {
+      .headBlock-img {
+        display: block;
+      }
+      &-content {
+        flex-direction: column;
+        align-items: center;
+        > div {
+          margin: 10px 0;
+        }
       }
     }
   }

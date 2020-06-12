@@ -159,4 +159,9 @@
     }
   }
 }
+  @media only screen and (max-width: 875px) {
+    .tovars {
+      padding: 0 0 25px 0;
+    }
+  }
 </style>

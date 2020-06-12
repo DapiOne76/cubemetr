@@ -73,7 +73,7 @@
     },
     created() {
       const yandexMapScript = document.createElement("script");
-      yandexMapScript.setAttribute("src", "https://api-maps.yandex.ru/2.1/?apikey=a2382f4e-e3bc-44e6-8504-bee805288d9c&lang=ru_RU");
+      yandexMapScript.setAttribute("src", "https://api-maps.yandex.ru/2.1.68?apikey=a2382f4e-e3bc-44e6-8504-bee805288d9c&lang=ru_RU");
       yandexMapScript.addEventListener("load", this.init);
       document.head.appendChild(yandexMapScript);
     }
@@ -226,6 +226,44 @@
           animation: pulse 2s;
           color: @color-yellow;
           background-color: #01477f;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 875px) {
+    .footerBlock {
+      &-info {
+        flex-direction: column;
+        padding-left: 0;
+        #map {
+          width: 100%;
+          height: 200px;
+        }
+        &_text {
+          padding-left: 0;
+        }
+      }
+      &-otzvon {
+        height: 120px;
+      }
+      &-question {
+        flex-basis: 50%;
+        padding-left: 15px;
+        h2:first-child,
+        h2:last-child {
+          font-size: 13px;
+          text-align: left;
+          margin: 0;
+        }
+      }
+      &-number {
+        flex-basis: 50%;
+        a {
+          font-size: 13px;
+          padding: 16px 16px;
+        }
+        &:before {
+          border-width: 60px 40px 60px 0px;
         }
       }
     }
