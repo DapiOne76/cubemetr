@@ -1,8 +1,7 @@
 <template>
  <div class="menuBlock c-flex-column c-flex-align-items-center">
   <navigation :category="category" @change="changeActive"/>
-   <div class="c-flex-column c-flex-align-items-end">
-     <h2 class="menuBlock-header">Строганные <span class="yellow-text">материалы</span></h2>
+   <div class="c-flex c-flex-justify-content-center">
      <search @change="changeSearch"/>
    </div>
   <tovars :search="search" :category="category"/>

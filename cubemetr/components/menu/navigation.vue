@@ -39,11 +39,12 @@
 .navigation {
   width: 50%;
   &-button {
-    transition: background-color .2s, color .2s;
+    -webkit-transition: background-color .2s,color .2s;
+    transition: background-color .2s,color .2s;
     padding: 13px 20px 11px;
     font-size: 12px;
-    background-color: rgba(0, 0, 0, 0.05);
-    margin: 5px 5px;
+    background-color: hsla(0,0%,96.1%,.85);
+    margin: 5px;
     cursor: pointer;
     border-radius: 5px;
     &.active,

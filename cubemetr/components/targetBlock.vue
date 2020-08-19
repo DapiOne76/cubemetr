@@ -11,7 +11,7 @@
         class="targetBlock-title"
         v-if="title"
         v-text="`${ejTitleLeft}${title}${ejTitleRight}`"/>
-      <h6 class="targetBlock-description" v-if="description" v-text="description"/>
+      <h6 class="targetBlock-description" v-if="description" v-html="description"/>
       <p class="targetBlock-price" v-if="price" v-text="price"/>
       <div>
         <span class="targetBlock-ej" v-if="ejPhone !== ''" v-text="ejPhone"/>
@@ -82,7 +82,7 @@
     }
   }
   &-bottom {
-    background-color: #F7F7F7;
+    background-color: hsla(0,0%,96.1%,.85);
     padding: 60px 20px 20px;
   }
   &-title {
@@ -107,7 +107,7 @@
     color: #444444;
   }
   &-number {
-    transition: background-color .2s, color .2s;
+    transition: color .2s;
     background-color: transparent;
     color: @color-yellow;
     font-size: 18px;
@@ -115,8 +115,7 @@
     font-weight: 600;
     margin: 20px 0 5px 0;
     &:hover {
-      background-color: black;
-      color: white;
+      color: black;
     }
   }
   &-ej {

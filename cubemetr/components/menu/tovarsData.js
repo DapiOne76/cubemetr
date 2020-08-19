@@ -28,43 +28,43 @@ export default [
     img: imitaciaBrusa11,
     category: 'СТРОГАННЫЕ МАТЕРИАЛЫ',
     title: 'Имитация бруса АВ',
-    description: '16*146*6000',
-    price: '292'
+    description: '16*146*3000',
+    price: '156'
   },
   {
     img: imitaciaBrusa,
     category: 'СТРОГАННЫЕ МАТЕРИАЛЫ',
     title: 'Имитация бруса АВ',
-    description: '17*146*6000',
-    price: '306'
+    description: '16*146*6000',
+    price: '311'
   },
   {
     img: imitaciaBrusa,
     category: 'СТРОГАННЫЕ МАТЕРИАЛЫ',
     title: 'Имитация бруса АВ',
     description: '21*146*6000',
-    price: '383'
+    price: '395'
   },
   {
     img: doskaPola,
     category: 'СТРОГАННЫЕ МАТЕРИАЛЫ',
     title: 'Доска пола АВ',
     description: '36*146*6000',
-    price: '610'
+    price: '670'
   },
   {
     img: euroVagonka,
     category: 'СТРОГАННЫЕ МАТЕРИАЛЫ',
     title: 'Евровагонка АВ',
     description: '12,5*96*2500',
-    price: '70'
+    price: '74'
   },
   {
     img: euroVagonka,
     category: 'СТРОГАННЫЕ МАТЕРИАЛЫ',
     title: 'Евровагонка АВ',
     description: '12,5*96*3000',
-    price: '81'
+    price: '84'
   },
   {
     img: vagonkaShtil,

@@ -34,7 +34,9 @@
     width: 375px;
     height: 40px;
     font-size: 26px;
-    outline:none;
+    background-color: hsla(0,0%,96.1%,.85);
+    border-radius: 5px;
+    outline: 0;
   }
   &:after {
     content: "";

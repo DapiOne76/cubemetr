@@ -54,7 +54,7 @@
   export default {
     name: "footerBlock",
     data: () => ({
-      number: '+7 910 814-90-95',
+      number: '+7 908 027-07-43',
       map: null
     }),
     methods: {
@@ -135,8 +135,9 @@
         text-decoration: none;
         font-family: sans-serif;
         color: @color-yellow;
+        -webkit-transition: color .3s;
         transition: color .3s;
-        font-size: 16px;
+        font-size: 22px;
         &:hover {
           color: black;
         }
@@ -162,7 +163,9 @@
       }
     }
     &-info {
-      padding-left: 120px;
+      margin-left: 10%;
+      background-color: hsla(0,0%,96.1%,.85);
+      margin-right: 10%;
       &_text {
         padding-left: 30px;
         padding-top: 25px;
@@ -233,8 +236,11 @@
   @media only screen and (max-width: 875px) {
     .footerBlock {
       &-info {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
         flex-direction: column;
-        padding-left: 0;
+        margin-left: 0;
+        margin-right: 0;
         #map {
           width: 100%;
           height: 200px;

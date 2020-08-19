@@ -67,11 +67,11 @@
               return accum
             }
           } else {
-            if (this.tabCurrent*14 < index || (this.tabCurrent - 1)*14 >= index) {
+            if (this.search === '' && ((this.tabCurrent -1) * 14 > index || this.tabCurrent * 14 < index+1)) {
               return accum
             }
           }
-          if (this.search) {
+          if (this.search !== '') {
             if (item.title.toLowerCase().indexOf(this.search.toLowerCase()) === -1) {
               return accum
             }
@@ -88,7 +88,7 @@
         return plates
       },
       tabs() {
-        return Math.floor(this.tovars.length/14)
+        return Math.ceil(this.tovars.length/14)
       }
     }
   }

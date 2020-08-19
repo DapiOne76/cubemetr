@@ -1,11 +1,5 @@
 <template>
     <div class="headBlock c-flex-column">
-      <h1 class="headBlock-tovars blue-text">
-        Товары магазина
-        <span class="headBlock-name yellow-text">
-          «КУБОМЕТР»
-        </span>
-      </h1>
       <div class="headBlock-img c-flex-justify-content-center">
         <img :src="image" alt="Логотип Кубометр Рыбинск Магазин"/>
       </div>
@@ -35,7 +29,7 @@
           ej-phone="📱"
           ej-title-left="⏳"
           ej-title-right="⌚"
-          description="Пн-пт: 09:00 - 19:00 Сб: 09:00 - 16:00"
+          description="Пн-пт: 09:00 - 19:00 <br> Сб: 09:00 - 16:00"
           number="+7 908 027-07-43"
         />
       </div>
@@ -63,6 +57,13 @@
 
 <style lang="less">
   .headBlock {
+    padding-top: 50px;
+    background-color: hsla(0,0%,96.1%,.85);
+    padding-bottom: 30px;
+    margin: 0 15px;
+    .targetBlock {
+      margin: 0 15px;
+    }
     &-content {
       margin-top: 50px;
       padding: 0 15px;
@@ -72,7 +73,7 @@
       font-size: 35px;
     }
     &-video {
-      margin: 0 30px;
+      margin: 0;
       flex: 1;
       >iframe {
         width: 100%;
