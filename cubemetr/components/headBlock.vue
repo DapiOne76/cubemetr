@@ -23,13 +23,14 @@
             allowfullscreen=""/>
         </div>
         <target-block
+          class="headBlock-video_target"
           :img="magazin"
           size="270"
           title="Режим работы"
           ej-phone="📱"
           ej-title-left="⏳"
           ej-title-right="⌚"
-          description="ПН-ПТ: 09:00 - 18:00 <br> СБ-ВС: ВЫХОДНОЙ"
+          description="ПН-ПТ: 09:00 - 18:00 <br> ОБЕД: 13:00 - 14:00 <br> СБ-ВС: ВЫХОДНОЙ"
           number="+7 908 027-07-43"
         />
       </div>
@@ -75,6 +76,9 @@
     &-video {
       margin: 0;
       flex: 1;
+      &_target {
+        white-space: pre-wrap;
+      }
       >iframe {
         width: 100%;
         height: 100%;

@@ -31,50 +31,24 @@ export default [
     img: imitaciaBrusa11,
     category:"СТРОГАННЫЕ МАТЕРИАЛЫ",
     title:"Имитация бруса АВ",
-    description:"16*146*3000",
-    price:"156"
-  },
-  {
-    img: imitaciaBrusa,
-    category:"СТРОГАННЫЕ МАТЕРИАЛЫ",
-    title:"Имитация бруса АВ",
     description:"16*146*6000",
-    price:"311"
+    price:"395"
   },
   {
+
     img: imitaciaBrusa,
     category:"СТРОГАННЫЕ МАТЕРИАЛЫ",
     title:"Имитация бруса АВ",
-    description:"17*126*6000",
-    price:"288"
+    description:"16*146*5000",
+    price:"340"
   },
   {
-    img:imitaciaBrusa,
+
+    img: imitaciaBrusa,
     category:"СТРОГАННЫЕ МАТЕРИАЛЫ",
     title:"Имитация бруса АВ",
-    description:"17*146*3000",
-    price:"342"
-  },
-  {
-    img:imitaciaBrusa,
-    category:"СТРОГАННЫЕ МАТЕРИАЛЫ",
-    title:"Имитация бруса АВ",
-    description:"17*176*6000",
-    price:"409"
-  },
-  {
-    img:imitaciaBrusa,
-    category:"СТРОГАННЫЕ МАТЕРИАЛЫ",
-    title:"Имитация бруса АВ",
-    description:"17*196*6000",
-    price:"456"
-  },
-  {
-    img:imitaciaBrusa,
-    category:"СТРОГАННЫЕ МАТЕРИАЛЫ",
-    title:"Имитация бруса АВ",
-    description:"21*146*6000",
-    price:"395"
+    description:"16*146*4000",
+    price:"265"
   },
   {
     img:doskaPola,
@@ -89,7 +63,7 @@ export default [
     title:"Евровагонка АВ",
     description:"12," +
       "5*96*2500",
-    price:"74"
+    price:"82"
   },
   {
     img:euroVagonka,
@@ -97,7 +71,7 @@ export default [
     title:"Евровагонка АВ",
     description:"12," +
       "5*96*3000",
-    price:"84"
+    price:"96"
   },
   {
     img:vagonkaShtil,
@@ -107,18 +81,11 @@ export default [
     price:"282"
   },
   {
-    img:vagonkaShtil,
-    category:"СТРОГАННЫЕ МАТЕРИАЛЫ",
-    title:"Вагонка Штиль АВ",
-    description:"15*96*6000",
-    price:"192"
-  },
-  {
     img:brusok,
     category:"СТРОГАННЫЕ МАТЕРИАЛЫ",
     title:"Брусок строганный АВ",
     description:"20*40*3000",
-    price:"47"
+    price:"62"
   },
   {
     img:brusok,

@@ -26,6 +26,7 @@
           </div>
           <div class="footerBlock-mapInfo_block c-flex-column">
             <span>ПН-ПТ: 09:00 — 18:00</span>
+            <span>ОБЕД:  13:00 - 14:00</span>
             <span>СБ-ВС: ВЫХОДНОЙ</span>
           </div>
         </div>
@@ -44,8 +45,7 @@
         <img :src="domoy">
       </div>
     </div>
-    <span class="footerBlock--OOO">Информация на сайте не является публичной офертой Все права защищены. © OOO "ДОМОЙ"., 2017-2020 ОГРН 1177627003400
-ИНН/КПП 7610123214/761001001</span>
+    <span class="footerBlock--OOO">Информация на сайте не является публичной офертой.   Все права защищены.</span>
   </div>
 </template>
 
@@ -134,6 +134,7 @@
       position: absolute;
       left: 25px;
       bottom: 5px;
+      white-space: pre-wrap;
       @media only screen and (max-width: 875px) {
         font-size: 5px;
       }
@@ -157,6 +158,7 @@
     &-mapInfo {
       padding: 25px 0;
       border-top: 1px dashed #444444;
+      white-space: pre-wrap;
       color: #444444;
       span {
         margin: 5px 0;
