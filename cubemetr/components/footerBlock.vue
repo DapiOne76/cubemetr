@@ -25,8 +25,8 @@
           <div class="icon pe-7s-clock">
           </div>
           <div class="footerBlock-mapInfo_block c-flex-column">
-            <span>ПН-ПТ: 09:00 — 19:00</span>
-            <span>СБ: 09:00 — 16:00</span>
+            <span>ПН-ПТ: 09:00 — 18:00</span>
+            <span>СБ-ВС: ВЫХОДНОЙ</span>
           </div>
         </div>
       </div>
@@ -34,28 +34,30 @@
     <div class="footerBlock-otzvon c-flex">
       <div class="footerBlock-question c-flex-column c-flex-justify-content-center ">
         <h2>
-          Не нашли ответа на свой вопрос?
+          Закажи бытовку себе на участок!
         </h2>
         <h2>
-          Свяжитесь с нами по указанному телефону!
+          <a href="https://domoy76.ru"> ПЕРЕЙТИ НА САЙТ ООО "ДОМОЙ"</a>
         </h2>
       </div>
       <div class="footerBlock-number c-flex-justify-content-center c-flex-align-items-center">
-        <a
-          v-if="number"
-          :href="`tel:${number.replace(/\s|-/g, '')}`"
-          v-text="number"/>
+        <img :src="domoy">
       </div>
     </div>
+    <span class="footerBlock--OOO">Информация на сайте не является публичной офертой Все права защищены. © OOO "ДОМОЙ"., 2017-2020 ОГРН 1177627003400
+ИНН/КПП 7610123214/761001001</span>
   </div>
 </template>
 
 <script>
+  import domoy from './d315fbc.jpg'
+
   export default {
     name: "footerBlock",
     data: () => ({
       number: '+7 908 027-07-43',
-      map: null
+      map: null,
+      domoy
     }),
     methods: {
       init() {
@@ -127,6 +129,15 @@
   }
 
   .footerBlock {
+    position: relative;
+    &--OOO {
+      position: absolute;
+      left: 25px;
+      bottom: 5px;
+      @media only screen and (max-width: 875px) {
+        font-size: 5px;
+      }
+    }
     &-phone {
       font-size: 30px;
       margin: 25px 0 15px;
@@ -201,6 +212,10 @@
         font-weight: 300;
       }
       h2:last-child {
+        a {
+          color: black;
+        }
+        text-decoration: underline;
         font-weight: bold;
         text-transform: uppercase;
       }
@@ -209,6 +224,16 @@
       position: relative;
       background-color: @color-yellow;
       flex-basis: 40%;
+      img {
+        width: 90%;
+        height: 90%;
+        border-radius: 15px;
+        @media only screen and (max-width: 875px) {
+          height: 70%;
+          width: 100%;
+          margin-right: 10px;
+        }
+      }
       &:before {
         content: '';
         position: absolute;
