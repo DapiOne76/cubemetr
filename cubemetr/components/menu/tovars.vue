@@ -2,7 +2,7 @@
   <div class="tovars flex-column">
     <div class="c-flex-wrap c-flex-justify-content-center">
       <target-block
-        v-for="(target, index) in plates"
+        v-for="(target, index) in newPlates"
         :key="index"
         :title="target.title"
         :img="target.img"
@@ -23,20 +23,14 @@
         class="tovars-block"
       />
     </div>
-    <div v-if="category ==='ВСЕ' && search === ''" class="tovars-tabs c-flex-justify-content-center">
-      <span
-        v-for="tab in tabs"
-        :key="tab"
-        :class="`${tab === tabCurrent ? 'tabActive' : ''}`"
-        @click="tabCurrent = tab"
-        v-text="tab"
-      />
+    <div class="tovars--telephone">
+      <h2>НА САЙТЕ ПРЕДОСТАВЛЕН НЕ ВЕСЬ ПЕРЕЧЕНЬ ТОВАРОВ, УТОЧНЯЙТЕ ПО ТЕЛЕФОНУ.</h2>
     </div>
   </div>
 </template>
 
 <script>
-  import tovars from "./tovarsData";
+  import tovars from "./newTovars";
   import TargetBlock from "../targetBlock";
   import reklama from "./tovarsImage/dostavka_rybinsk_kybometr76.jpg";
   export default {
@@ -59,34 +53,46 @@
       category: String
     },
     computed: {
-      plates() {
-        const isCategory = this.category !== 'ВСЕ';
-        const plates = this.tovars.reduce((accum, item, index) => {
-          if (isCategory) {
-            if (item.category !== this.category) {
-              return accum
-            }
-          } else {
-            if (this.search === '' && ((this.tabCurrent -1) * 14 > index || this.tabCurrent * 14 < index+1)) {
-              return accum
-            }
-          }
-          if (this.search !== '') {
-            if (item.title.toLowerCase().indexOf(this.search.toLowerCase()) === -1) {
-              return accum
-            }
-          }
-          accum.push({
-            img: item.img,
-            category: item.category,
-            title: item.title,
-            description: `${item.description} ММ.`,
-            price: `${item.price} руб/шт`
-          });
-          return accum
-        }, []);
-        return plates
+      newPlates() {
+        return tovars.reduce((accum, item, index) => {
+            accum.push({
+                    img: item.img,
+                    category: item.category,
+                    title: item.title,
+                    description: `${item.description} ММ.`,
+                    price: `${item.price}`
+                  });
+            return accum
+        }, [])
       },
+      // plates() {
+      //   const isCategory = this.category !== 'ВСЕ';
+      //   const plates = this.tovars.reduce((accum, item, index) => {
+      //     if (isCategory) {
+      //       if (item.category !== this.category) {
+      //         return accum
+      //       }
+      //     } else {
+      //       if (this.search === '' && ((this.tabCurrent -1) * 14 > index || this.tabCurrent * 14 < index+1)) {
+      //         return accum
+      //       }
+      //     }
+      //     if (this.search !== '') {
+      //       if (item.title.toLowerCase().indexOf(this.search.toLowerCase()) === -1) {
+      //         return accum
+      //       }
+      //     }
+      //     accum.push({
+      //       img: item.img,
+      //       category: item.category,
+      //       title: item.title,
+      //       description: `${item.description} ММ.`,
+      //       price: `${item.price} руб/шт`
+      //     });
+      //     return accum
+      //   }, []);
+      //   return plates
+      // },
       tabs() {
         return Math.ceil(this.tovars.length/14)
       }
@@ -133,7 +139,35 @@
     }
   }
 .tovars {
-  padding: 0 5% 25px;
+  padding: 0 5% 55px;
+  &--telephone {
+    position: relative;
+    h2 {
+      z-index: 1;
+      color: whitesmoke;
+      text-align: center;
+      left: 32px;
+      top: 15px;
+      position: relative;
+    }
+    &::before {
+      z-index: 0;
+      background-color: @color-yellow;
+      content: "";
+      position: absolute;
+      right: -16px;
+      top: 0px;
+      width: 100%;
+      padding: 15px 0;
+      height: 100%;
+      -webkit-transform: skewX(
+        30deg
+      );
+      transform: skewX(
+        30deg
+      );
+    }
+  }
   &-block {
     margin: 25px;
   }
@@ -162,6 +196,19 @@
   @media only screen and (max-width: 875px) {
     .tovars {
       padding: 0 0 25px 0;
+      &--telephone {
+        padding: 0 48px;
+        h2 {
+          font-size: 14px;
+          left: 0;
+          text-align: center;
+        }
+        &::before {
+          width: 80%;
+          right: unset;
+          left: 40px;
+        }
+      }
     }
   }
 </style>

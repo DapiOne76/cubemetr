@@ -1,10 +1,6 @@
 <template>
  <div class="menuBlock c-flex-column c-flex-align-items-center">
-  <navigation :category="category" @change="changeActive"/>
-   <div class="c-flex c-flex-justify-content-center">
-     <search @change="changeSearch"/>
-   </div>
-  <tovars :search="search" :category="category"/>
+  <tovars :search="''" :category="category"/>
  </div>
 </template>
 
@@ -41,12 +37,6 @@
   }
   @media only screen and (max-width: 875px) {
     .menuBlock {
-      .targetBlock {
-        &-img {
-          max-height: 199px;
-          max-width: 284px;
-        }
-      }
       &-header {
         font-size: 40px;
       }

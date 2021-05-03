@@ -1,7 +1,7 @@
 <template>
   <div class="targetBlock c-flex-column">
     <div
-      class="targetBlock-img"
+      class="targetBlock-img c-flex-align-items-center"
       :style="getStyle()"
     >
       <img :src="img"/>

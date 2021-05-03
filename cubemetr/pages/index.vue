@@ -1,10 +1,14 @@
 <template>
   <div class="wrapper c-flex-column">
-    <div class="header c-flex-justify-content-between c-flex-align-items-center"><h1 class="header-tovars">
-      Магазин
-      <span class="headBlock-name yellow-text">
-        «КУБОМЕТР»
-      </span></h1> <a href="tel:+79080270743" class="header-number">+7 908 027-07-43</a></div>
+    <div class="header c-flex-justify-content-between c-flex-align-items-center">
+      <h1 class="header-tovars">
+        Магазин
+        <span class="headBlock-name yellow-text">
+          «КУБОМЕТР»
+        </span>
+      </h1>
+      <a href="tel:+79080270743" class="header-number">+7 908 027-07-43</a>
+    </div>
     <head-block/>
     <menu-block/>
     <client-only>
@@ -104,6 +108,13 @@ export default {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       flex-direction: column;
+      &-tovars {
+        margin: 0;
+      }
+      &-number {
+        font-size: 22px;
+        margin: 0;
+      }
     }
     .parralax {
       display: none;
