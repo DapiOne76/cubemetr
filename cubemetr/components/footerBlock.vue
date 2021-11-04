@@ -17,8 +17,7 @@
           </div>
           <div class="footerBlock-mapInfo_block c-flex-column">
             <span>г. Рыбинск,</span>
-            <span>ул.Волжская Набережная 163</span>
-            <span>(вход со стороны набережной)</span>
+            <span>ул.Расторгуева 20А</span>
           </div>
         </div>
         <div class="footerBlock-mapInfo c-flex c-flex-align-items-center">
@@ -27,7 +26,8 @@
           <div class="footerBlock-mapInfo_block c-flex-column">
             <span>ПН-ПТ: 09:00 — 18:00</span>
             <span>ОБЕД:  13:00 - 14:00</span>
-            <span>СБ-ВС: ВЫХОДНОЙ</span>
+            <span>СБ: 09:00 - 12:00</span>
+            <span>ВС: ВЫХОДНОЙ</span>
           </div>
         </div>
       </div>
@@ -63,10 +63,10 @@
       init() {
         ymaps.ready(() => {
           this.map = new ymaps.Map("map", {
-            center: [58.052242, 38.839894],
-            zoom: 13
+            center: [58.047997, 38.763984],
+            zoom: 16
           });
-          const myGeoObject = new ymaps.Placemark([58.052242, 38.839894], {}, {
+          const myGeoObject = new ymaps.Placemark([58.047997, 38.763984], {}, {
             preset: 'islands#blueDotIcon'
           });
           this.map.geoObjects.add(myGeoObject);

@@ -27,38 +27,38 @@ import dver from './tovarsImage/dver.jpg'
 
 export default [
   {
-    img:euroVagonka,
-    category:"СТРОГАННЫЕ МАТЕРИАЛЫ",
-    title:"Евровагонка АВ",
-    description:"12,5*96*3000",
-    price:"1300 РУБ/УП"
-  },
-  {
-    img: imitaciaBrusa,
-    category:"СТРОГАННЫЕ МАТЕРИАЛЫ",
-    title:"Имитация бруса АВ",
-    description:"16*146*6000",
-    price:"520 руб/шт"
-  },
-  {
     img: imitaciaBrusa,
     category:"СТРОГАННЫЕ МАТЕРИАЛЫ",
     title:"Имитация бруса АВ",
     description:"17*146*6000",
-    price:"550 руб/шт"
+    price:"660 руб/шт"
+  },
+  {
+    img:vagonkaShtil,
+    category:"СТРОГАННЫЕ МАТЕРИАЛЫ",
+    title:"Вагонка Штиль АВ",
+    description:"14*135*3000",
+    price:"270 РУБ/ШТ"
+  },
+  {
+    img: imitaciaBrusa,
+    category:"СТРОГАННЫЕ МАТЕРИАЛЫ",
+    title:"Имитация бруса А",
+    description:"17*146*6000",
+    price:"700 руб/шт"
   },
   {
     img: imitaciaBrusa,
     category:"СТРОГАННЫЕ МАТЕРИАЛЫ",
     title:"Имитация бруса АВ",
-    description:"17*126*6000",
-    price:"475 руб/шт"
+    description:"17*128*6000",
+    price:"570 руб/шт"
   },
   {
     img: imitaciaBrusa,
     category:"СТРОГАННЫЕ МАТЕРИАЛЫ",
     title:"Имитация бруса АВ",
-    description:"17*176*6000",
-    price:"665 руб/шт"
+    description:"17*178*6000",
+    price:"805 руб/шт"
   },
 ]
