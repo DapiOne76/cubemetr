@@ -7,7 +7,7 @@
           «КУБОМЕТР»
         </span>
       </h1>
-      <a href="tel:+79080270743" class="header-number">+7 908 027-07-43</a>
+      <a href="tel:+79080270754" class="header-number">+7 908 027-07-54</a>
     </div>
     <head-block/>
     <menu-block/>

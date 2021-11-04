@@ -8,8 +8,8 @@
         <div class="footerBlock-phone c-flex-align-items-center">
           <span>📱</span>
           <a
-            :href="`tel:${'+7 908 027-07-43'.replace(/\s|-/g, '')}`">
-            +7 908 027-07-43
+            :href="`tel:${'+7 908 027-07-54'.replace(/\s|-/g, '')}`">
+            +7 908 027-07-54
           </a>
         </div>
         <div class="footerBlock-mapInfo c-flex c-flex-align-items-center">
@@ -18,6 +18,7 @@
           <div class="footerBlock-mapInfo_block c-flex-column">
             <span>г. Рыбинск,</span>
             <span>ул.Расторгуева 20А</span>
+            <span>"ПЕРЕД ПРИХОДОМ, ОБЯЗАТЕЛЬНО ЗВОНИТЕ, ЧТОБЫ ДОГОВОРИТЬСЯ О ВСТРЕЧЕ!"</span>
           </div>
         </div>
         <div class="footerBlock-mapInfo c-flex c-flex-align-items-center">
@@ -55,7 +56,7 @@
   export default {
     name: "footerBlock",
     data: () => ({
-      number: '+7 908 027-07-43',
+      number: '+7 908 027-07-54',
       map: null,
       domoy
     }),
